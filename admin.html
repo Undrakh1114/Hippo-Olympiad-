@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Admin — Hippo Prep</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:#1B2A4A;min-height:100vh;padding:24px;color:#FAF6EE;}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;}
+h1{font-size:22px;font-weight:700;}
+.badge{background:#E0533D;color:#fff;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;}
+.card{background:#fff;border-radius:12px;padding:24px;margin-bottom:16px;color:#1B2A4A;}
+.user-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid #f0e9d8;}
+.user-row:last-child{border-bottom:none;}
+.user-info .email{font-weight:600;font-size:15px;}
+.user-info .date{font-size:12px;color:#6B7280;margin-top:2px;}
+.status{font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;}
+.status.locked{background:#fee2e2;color:#E0533D;}
+.status.unlocked{background:#dcfce7;color:#16a34a;}
+.unlock-btn{background:#E0533D;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;}
+.unlock-btn.done{background:#16a34a;}
+.lock-btn{background:#6B7280;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;margin-left:8px;}
+.empty{text-align:center;color:#6B7280;padding:32px;font-size:14px;}
+.admin-login{background:#fff;border-radius:16px;padding:40px;max-width:360px;margin:60px auto;color:#1B2A4A;}
+.admin-login h2{font-size:20px;font-weight:700;margin-bottom:20px;}
+input{width:100%;padding:12px;border:1.5px solid #e5e7eb;border-radius:8px;font-size:14px;margin-bottom:12px;font-family:inherit;}
+.btn{width:100%;padding:13px;background:#E0533D;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px;}
+.stat{background:rgba(255,255,255,0.1);border-radius:10px;padding:16px;text-align:center;}
+.stat-num{font-size:28px;font-weight:700;}
+.stat-label{font-size:12px;opacity:.7;margin-top:4px;}
+</style>
+</head>
+<body>
+<div id="admin-login-screen">
+  <div class="admin-login">
+    <h2>🔐 Admin Panel</h2>
+    <input type="password" id="admin-pass" placeholder="Admin нууц үг" onkeydown="if(event.key==='Enter')adminLogin()"/>
+    <button class="btn" onclick="adminLogin()">Нэвтрэх</button>
+  </div>
+</div>
+
+<div id="admin-panel" style="display:none">
+  <div class="header">
+    <div>
+      <h1>👑 Hippo Prep Admin</h1>
+      <div style="font-size:13px;opacity:.7;margin-top:4px;">Хэрэглэгчийн менежмент</div>
+    </div>
+    <span class="badge">ADMIN</span>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <h2 style="font-size:16px;font-weight:700;">Бүртгэлтэй хэрэглэгчид</h2>
+      <button onclick="loadUsers()" style="background:#1B2A4A;color:#fff;border:none;border-radius:6px;padding:6px 14px;cursor:pointer;font-size:13px;">🔄 Шинэчлэх</button>
+    </div>
+    <div id="user-list"><div class="empty">Ачааллаж байна...</div></div>
+  </div>
+</div>
+
+<script>
+const ADMIN_PASSWORD = 'hippo2025admin';
+
+function adminLogin() {
+  const pass = document.getElementById('admin-pass').value;
+  if(pass === ADMIN_PASSWORD) {
+    document.getElementById('admin-login-screen').style.display='none';
+    document.getElementById('admin-panel').style.display='block';
+    loadUsers();
+  } else {
+    alert('Нууц үг буруу!');
+  }
+}
+
+function getUsers() { try { return JSON.parse(localStorage.getItem('hippo_users')||'{}'); } catch { return {}; } }
+function saveUsers(u) { localStorage.setItem('hippo_users', JSON.stringify(u)); }
+
+function loadUsers() {
+  const users = getUsers();
+  const list = Object.values(users);
+  const total = list.length;
+  const unlocked = list.filter(u=>u.unlocked).length;
+  const locked = total - unlocked;
+
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><div class="stat-num">${total}</div><div class="stat-label">Нийт хэрэглэгч</div></div>
+    <div class="stat"><div class="stat-num" style="color:#7A9B76">${unlocked}</div><div class="stat-label">Эрх нээлттэй</div></div>
+    <div class="stat"><div class="stat-num" style="color:#E0533D">${locked}</div><div class="stat-label">Хүлээж байгаа</div></div>
+  `;
+
+  if(list.length === 0) {
+    document.getElementById('user-list').innerHTML = '<div class="empty">Бүртгэлтэй хэрэглэгч байхгүй байна</div>';
+    return;
+  }
+
+  list.sort((a,b) => (a.unlocked===b.unlocked)?0:(a.unlocked?1:-1));
+
+  document.getElementById('user-list').innerHTML = list.map(u => `
+    <div class="user-row" id="row-${btoa(u.email).replace(/=/g,'')}">
+      <div class="user-info">
+        <div class="email">${u.email}</div>
+        <div class="date">Бүртгэсэн: ${u.registeredAt ? new Date(u.registeredAt).toLocaleString('mn-MN') : '—'}</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="status ${u.unlocked?'unlocked':'locked'}">${u.unlocked?'✅ Нээлттэй':'🔒 Хүлээж байна'}</span>
+        ${!u.unlocked
+          ? `<button class="unlock-btn" onclick="unlockUser('${u.email}')">Нээх</button>`
+          : `<button class="lock-btn" onclick="lockUser('${u.email}')">Хаах</button>`
+        }
+      </div>
+    </div>
+  `).join('');
+}
+
+function unlockUser(email) {
+  const users = getUsers();
+  if(users[email]) {
+    users[email].unlocked = true;
+    users[email].unlockedAt = new Date().toISOString();
+    saveUsers(users);
+    loadUsers();
+    alert(`✅ ${email} — эрх нээгдлээ!`);
+  }
+}
+
+function lockUser(email) {
+  if(!confirm(`${email} хэрэглэгчийн эрхийг хаах уу?`)) return;
+  const users = getUsers();
+  if(users[email]) {
+    users[email].unlocked = false;
+    saveUsers(users);
+    loadUsers();
+  }
+}
+</script>
+</body>
+</html>
