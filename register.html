@@ -8,36 +8,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Inter',sans-serif;background:#f0f4f0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;}
-.logo{font-size:26px;font-weight:900;color:#1B2A4A;margin-bottom:28px;letter-spacing:-0.01em;text-align:center;}
+.logo{font-size:26px;font-weight:900;color:#1B2A4A;margin-bottom:28px;text-align:center;}
 .logo span{color:#E0533D;}
 .card{background:#fff;border-radius:20px;padding:36px;width:100%;max-width:440px;box-shadow:0 8px 32px rgba(0,0,0,0.10);}
-.card h1{font-size:21px;font-weight:700;color:#1B2A4A;margin-bottom:5px;}
-.card p.sub{font-size:13.5px;color:#6B7280;margin-bottom:24px;}
+h1{font-size:21px;font-weight:700;color:#1B2A4A;margin-bottom:5px;}
+p.sub{font-size:13.5px;color:#6B7280;margin-bottom:24px;}
 .step{display:none;}
-.step.active{display:block;}
 .field{margin-bottom:16px;}
 .field label{display:block;font-size:13px;font-weight:600;color:#1B2A4A;margin-bottom:5px;}
 .field input{width:100%;padding:12px 14px;border:1.5px solid #e5e7eb;border-radius:10px;font-size:15px;font-family:inherit;color:#1B2A4A;outline:none;transition:border-color .15s;}
 .field input:focus{border-color:#1a6b3c;}
 .err{font-size:12px;color:#dc2626;margin-top:4px;display:none;}
-.btn{width:100%;padding:14px;background:#1a6b3c;color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;transition:background .15s;margin-top:4px;}
+.btn{width:100%;padding:14px;background:#1a6b3c;color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:8px;}
 .btn:hover{background:#15572f;}
+.btn:disabled{background:#9ca3af;cursor:not-allowed;}
 .btn-outline{background:#fff;color:#1B2A4A;border:1.5px solid #e5e7eb;margin-top:10px;}
 .btn-outline:hover{background:#f9fafb;}
-.tabs{display:flex;gap:0;margin-bottom:24px;border:1.5px solid #e5e7eb;border-radius:10px;overflow:hidden;}
-.tab-btn{flex:1;padding:10px;background:#fff;border:none;font-family:inherit;font-size:14px;font-weight:600;color:#6B7280;cursor:pointer;transition:all .15s;}
+.tabs{display:flex;margin-bottom:24px;border:1.5px solid #e5e7eb;border-radius:10px;overflow:hidden;}
+.tab-btn{flex:1;padding:10px;background:#fff;border:none;font-family:inherit;font-size:14px;font-weight:600;color:#6B7280;cursor:pointer;}
 .tab-btn.active{background:#1a6b3c;color:#fff;}
 .switch{text-align:center;font-size:13px;color:#6B7280;margin-top:18px;}
 .switch a{color:#1a6b3c;font-weight:600;cursor:pointer;}
 .info-box{background:#f0fdf4;border:1.5px solid #bbf7d0;border-radius:10px;padding:14px 16px;font-size:13.5px;color:#166534;margin-bottom:16px;line-height:1.65;}
 .info-box strong{color:#1a6b3c;}
 .bank-card{background:linear-gradient(135deg,#1a6b3c 0%,#0d4427 100%);border-radius:14px;padding:20px 22px;margin-bottom:16px;color:#fff;}
-.bank-card .bank-name{font-size:13px;opacity:.8;margin-bottom:6px;font-weight:600;letter-spacing:.05em;}
+.bank-card .bank-name{font-size:13px;opacity:.8;margin-bottom:6px;font-weight:600;}
 .bank-card .acc-num{font-size:18px;font-weight:700;letter-spacing:2px;margin-bottom:4px;}
 .bank-card .acc-holder{font-size:13px;opacity:.8;}
 .bank-card .copy-btn{margin-top:14px;background:rgba(255,255,255,0.2);color:#fff;border:1px solid rgba(255,255,255,0.4);border-radius:7px;padding:7px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;}
 .alert-box{background:#fef9c3;border:1.5px solid #fde047;border-radius:10px;padding:14px;font-size:13.5px;color:#854d0e;text-align:center;margin-bottom:16px;line-height:1.6;}
 .success-icon{text-align:center;font-size:52px;margin-bottom:14px;}
+.spinner{width:18px;height:18px;border:2px solid rgba(255,255,255,0.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;display:inline-block;}
+@keyframes spin{to{transform:rotate(360deg)}}
 </style>
 </head>
 <body>
@@ -48,8 +50,7 @@ body{font-family:'Inter',sans-serif;background:#f0f4f0;min-height:100vh;display:
     <button class="tab-btn" onclick="showTab('login')">Нэвтрэх</button>
   </div>
 
-  <!-- REGISTER -->
-  <div class="step active" id="step-register">
+  <div class="step" id="step-register" style="display:block">
     <h1>Бүртгэл үүсгэх</h1>
     <p class="sub">Gmail хаягаар бүртгүүлнэ үү</p>
     <div class="field">
@@ -67,18 +68,14 @@ body{font-family:'Inter',sans-serif;background:#f0f4f0;min-height:100vh;display:
       <input type="password" id="reg-pass2" placeholder="Нууц үгийг дахин оруулна уу"/>
       <div class="err" id="reg-pass2-err"></div>
     </div>
-    <button class="btn" onclick="doRegister()">Бүртгүүлэх →</button>
+    <button class="btn" id="reg-btn" onclick="doRegister()">Бүртгүүлэх →</button>
     <div class="switch">Аль хэдийн бүртгэлтэй юу? <a onclick="showTab('login')">Нэвтрэх</a></div>
   </div>
 
-  <!-- PAYMENT -->
   <div class="step" id="step-payment">
     <h1>Төлбөр төлөх</h1>
     <p class="sub">Нэвтрэх эрх авахын тулд төлбөрөө төлнө үү</p>
-    <div class="info-box">
-      💳 <strong>1 сарын эрх: 59,000₮</strong><br/>
-      Төлбөр төлсний дараа <strong>86038078</strong> дугаарт залгаж мэдэгдэнэ үү. Бид таны эрхийг нээж өгнө.
-    </div>
+    <div class="info-box">💳 <strong>1 сарын эрх: 59,000₮</strong><br/>Төлбөр төлсний дараа <strong>86038078</strong> дугаарт залгаж мэдэгдэнэ үү.</div>
     <div style="text-align:center;margin-bottom:12px;">
       <img src="bank-icon.png" width="72" height="72" style="border-radius:16px;" alt="Хаан банк"/>
     </div>
@@ -88,27 +85,20 @@ body{font-family:'Inter',sans-serif;background:#f0f4f0;min-height:100vh;display:
       <div class="acc-holder">Жавхлан</div>
       <button class="copy-btn" onclick="copyText('MN200005005307795414')">📋 Дансны дугаар хуулах</button>
     </div>
-    <div class="alert-box">
-      📞 Төлбөр төлсний дараа<br/>
-      <strong style="font-size:18px;">86038078</strong> дугаарт залгана уу
-    </div>
-    <button class="btn" onclick="goWait()">Би төлсөн — Хүлээх</button>
+    <div class="alert-box">📞 Төлбөр төлсний дараа<br/><strong style="font-size:18px;">86038078</strong> дугаарт залгана уу</div>
+    <button class="btn" onclick="showStep('step-waiting')">Би төлсөн — Хүлээх</button>
     <button class="btn btn-outline" onclick="doLogout()">Гарах</button>
   </div>
 
-  <!-- WAITING -->
   <div class="step" id="step-waiting">
     <div class="success-icon">⏳</div>
     <h1 style="text-align:center">Хүлээж байна</h1>
     <p class="sub" style="text-align:center;margin-top:8px;">Ажилын цагаар өглөө 10:00 аас орой 17:00 цаг хүртэл холбогдоорой.</p>
-    <div class="info-box" style="margin-top:20px;text-align:center">
-      📞 <strong>86038078</strong>
-    </div>
-    <button class="btn" style="margin-top:8px" onclick="checkUnlock()">✅ Нэвтрэх эрх нээгдсэн үү?</button>
+    <div class="info-box" style="margin-top:20px;text-align:center">📞 <strong>86038078</strong></div>
+    <button class="btn" id="check-btn" onclick="checkUnlock()">✅ Нэвтрэх эрх нээгдсэн үү?</button>
     <button class="btn btn-outline" onclick="doLogout()">Гарах</button>
   </div>
 
-  <!-- LOGIN -->
   <div class="step" id="step-login">
     <h1>Нэвтрэх</h1>
     <p class="sub">Gmail хаяг болон нууц үгээ оруулна уу</p>
@@ -121,79 +111,112 @@ body{font-family:'Inter',sans-serif;background:#f0f4f0;min-height:100vh;display:
       <input type="password" id="login-pass" placeholder="Нууц үг" onkeydown="if(event.key==='Enter')doLogin()"/>
     </div>
     <div class="err" id="login-err"></div>
-    <button class="btn" onclick="doLogin()">Нэвтрэх</button>
+    <button class="btn" id="login-btn" onclick="doLogin()">Нэвтрэх</button>
     <div class="switch">Бүртгэлгүй юу? <a onclick="showTab('register')">Бүртгүүлэх</a></div>
   </div>
 </div>
 
 <script>
-function getUsers(){try{return JSON.parse(localStorage.getItem('hippo_users')||'{}')}catch{return{}}}
-function saveUsers(u){localStorage.setItem('hippo_users',JSON.stringify(u))}
-function getSession(){try{return JSON.parse(localStorage.getItem('hippo_session')||'null')}catch{return null}}
-function saveSession(u){localStorage.setItem('hippo_session',JSON.stringify(u))}
+const SUPABASE_URL = 'https://hmcbhdhiytatawfickjp.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhtY2JoZGhpeXRhdGF3Zmlja2pwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYzNjIxMTcsImV4cCI6MjEwMTkzODExN30.-h7iWbbgCqegtKV_fdDZjATUvJzSfZUmVaRcpqapWD4';
 
-window.onload=function(){
-  const s=getSession();
-  if(s){
-    if(s.unlocked){window.location.href='index.html';return;}
-    document.getElementById('auth-tabs').style.display='none';
-    showStep('step-waiting');
-  }
+async function sbFetch(path, method='GET', body=null) {
+  const opts = {
+    method,
+    headers: {
+      'apikey': SUPABASE_KEY,
+      'Authorization': 'Bearer ' + SUPABASE_KEY,
+      'Content-Type': 'application/json',
+      'Prefer': method==='POST' ? 'return=representation' : ''
+    }
+  };
+  if (body) opts.body = JSON.stringify(body);
+  try {
+    const res = await fetch(SUPABASE_URL + '/rest/v1/' + path, opts);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch(e) { return null; }
+}
+
+async function getUser(email) {
+  const data = await sbFetch('users?email=eq.' + encodeURIComponent(email) + '&select=*');
+  return data && data[0] ? data[0] : null;
+}
+
+async function createUser(email, password) {
+  return sbFetch('users', 'POST', { email, password_hash: btoa(password), unlocked: false });
+}
+
+function getSession() { try { return JSON.parse(localStorage.getItem('hippo_session')||'null'); } catch { return null; } }
+function saveSession(s) { localStorage.setItem('hippo_session', JSON.stringify(s)); }
+function doLogout() { localStorage.removeItem('hippo_session'); window.location.reload(); }
+
+window.onload = async function() {
+  const s = getSession();
+  if (!s || !s.email) return;
+  document.getElementById('auth-tabs').style.display = 'none';
+  showStep('step-waiting');
+  const user = await getUser(s.email);
+  if (!user) { doLogout(); return; }
+  if (user.unlocked) { window.location.href = 'index.html'; }
 };
 
-function showStep(id){document.querySelectorAll('.step').forEach(s=>s.style.display='none');document.getElementById(id).style.display='block';}
-function showTab(tab){
+function showStep(id) { document.querySelectorAll('.step').forEach(s=>s.style.display='none'); document.getElementById(id).style.display='block'; }
+function showTab(tab) {
   document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',(tab==='register'&&i===0)||(tab==='login'&&i===1)));
   showStep(tab==='register'?'step-register':'step-login');
 }
 function showErr(id,msg){const e=document.getElementById(id);e.textContent=msg;e.style.display='block';}
+function clearErrs(){document.querySelectorAll('.err').forEach(e=>e.style.display='none');}
+function setBtn(id,loading,label){
+  const b=document.getElementById(id);if(!b)return;
+  b.disabled=loading;
+  b.innerHTML=loading?'<div class="spinner"></div> Түр хүлээнэ үү...':label;
+}
 
-function doRegister(){
+async function doRegister() {
+  clearErrs();
   const email=document.getElementById('reg-email').value.trim();
   const pass=document.getElementById('reg-pass').value;
   const pass2=document.getElementById('reg-pass2').value;
-  document.querySelectorAll('.err').forEach(e=>e.style.display='none');
   let ok=true;
   if(!email||!email.includes('@')){showErr('reg-email-err','Зөв Gmail хаяг оруулна уу');ok=false;}
   if(pass.length<6){showErr('reg-pass-err','Нууц үг дор хаяж 6 тэмдэгт байх ёстой');ok=false;}
   if(pass!==pass2){showErr('reg-pass2-err','Нууц үг таарахгүй байна');ok=false;}
   if(!ok)return;
-  const users=getUsers();
-  if(users[email]){showErr('reg-email-err','Энэ имэйл аль хэдийн бүртгэлтэй байна');return;}
-  users[email]={email,password:pass,unlocked:false,registeredAt:new Date().toISOString()};
-  saveUsers(users);
-  saveSession({email,unlocked:false});
+  setBtn('reg-btn',true,'');
+  const existing=await getUser(email);
+  if(existing){setBtn('reg-btn',false,'Бүртгүүлэх →');showErr('reg-email-err','Энэ имэйл аль хэдийн бүртгэлтэй байна');return;}
+  const result=await createUser(email,pass);
+  if(!result){setBtn('reg-btn',false,'Бүртгүүлэх →');showErr('reg-email-err','Алдаа гарлаа. Дахин оролдоно уу.');return;}
+  saveSession({email});
   document.getElementById('auth-tabs').style.display='none';
   showStep('step-payment');
 }
 
-function doLogin(){
-  document.querySelectorAll('.err').forEach(e=>e.style.display='none');
+async function doLogin() {
+  clearErrs();
   const email=document.getElementById('login-email').value.trim();
   const pass=document.getElementById('login-pass').value;
-  const users=getUsers();
-  const user=users[email];
-  if(!user){showErr('login-err','Имэйл олдсонгүй. Эхлээд бүртгүүлнэ үү.');return;}
-  if(user.password!==pass){showErr('login-err','Нууц үг буруу байна.');return;}
-  saveSession({email,unlocked:user.unlocked});
+  setBtn('login-btn',true,'');
+  const user=await getUser(email);
+  if(!user){setBtn('login-btn',false,'Нэвтрэх');showErr('login-err','Имэйл олдсонгүй. Эхлээд бүртгүүлнэ үү.');return;}
+  if(user.password_hash!==btoa(pass)){setBtn('login-btn',false,'Нэвтрэх');showErr('login-err','Нууц үг буруу байна.');return;}
+  saveSession({email});
   if(user.unlocked){window.location.href='index.html';}
-  else{document.getElementById('auth-tabs').style.display='none';showStep('step-waiting');}
+  else{setBtn('login-btn',false,'Нэвтрэх');document.getElementById('auth-tabs').style.display='none';showStep('step-waiting');}
 }
 
-function goWait(){showStep('step-waiting');}
-
-function checkUnlock(){
+async function checkUnlock() {
   const s=getSession();if(!s)return;
-  const users=getUsers();const user=users[s.email];
-  if(user&&user.unlocked){saveSession({...s,unlocked:true});window.location.href='index.html';}
+  setBtn('check-btn',true,'');
+  const user=await getUser(s.email);
+  setBtn('check-btn',false,'✅ Нэвтрэх эрх нээгдсэн үү?');
+  if(user&&user.unlocked){window.location.href='index.html';}
   else{alert('Таны эрх бэлэн болоогүй байна.\n☎️ 86038078 дугаарт залгасан уу?');}
 }
 
-function doLogout(){localStorage.removeItem('hippo_session');window.location.reload();}
-
-function copyText(txt){
-  navigator.clipboard.writeText(txt).then(()=>alert('✅ Хуулагдлаа: '+txt)).catch(()=>prompt('Хуулна уу:',txt));
-}
+function copyText(txt){navigator.clipboard.writeText(txt).then(()=>alert('✅ Хуулагдлаа: '+txt)).catch(()=>prompt('Хуулна уу:',txt));}
 </script>
 </body>
 </html>
