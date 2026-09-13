@@ -460,6 +460,25 @@ a:focus-visible {
   margin: 0 0 14px;
 }
 
+.xword-clue-image-wrap {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+}
+.xword-clue-image-wrap p {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin: 0 0 10px;
+  line-height: 1.5;
+}
+.xword-clue-image-wrap img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
 .clue-list {
   list-style: none;
   margin: 0;
@@ -43097,365 +43116,330 @@ const CROSSWORD_PUZZLES = {
   "below_scale_colours": {
     "title": "Colours",
     "level": "Below Scale",
-    "rows": 11,
-    "cols": 10,
+    "rows": 13,
+    "cols": 13,
+    "clueImage": "crossword-images/below_scale_colours.png",
     "words": [
-      {
-        "number": 7,
-        "word": "YELLOW",
-        "display": "YELLOW",
-        "clue": "The colour of the sun and a banana.",
-        "row": 6,
-        "col": 0,
-        "direction": "across"
-      },
       {
         "number": 2,
         "word": "PURPLE",
         "display": "PURPLE",
-        "clue": "The colour you get by mixing red and blue.",
-        "row": 2,
-        "col": 3,
-        "direction": "down"
-      },
-      {
-        "number": 6,
-        "word": "ORANGE",
-        "display": "ORANGE",
-        "clue": "The colour you get by mixing red and yellow; also a fruit.",
-        "row": 4,
-        "col": 2,
+        "row": 1,
+        "col": 7,
         "direction": "across"
       },
       {
         "number": 3,
+        "word": "BROWN",
+        "display": "BROWN",
+        "row": 3,
+        "col": 3,
+        "direction": "across"
+      },
+      {
+        "number": 5,
         "word": "GREEN",
         "display": "GREEN",
-        "clue": "The colour of grass and most leaves.",
-        "row": 2,
+        "row": 6,
+        "col": 1,
+        "direction": "across"
+      },
+      {
+        "number": 6,
+        "word": "RED",
+        "display": "RED",
+        "row": 8,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 7,
+        "word": "YELLOW",
+        "display": "YELLOW",
+        "row": 8,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "BLACK",
+        "display": "BLACK",
+        "row": 0,
+        "col": 11,
+        "direction": "down"
+      },
+      {
+        "number": 2,
+        "word": "PINK",
+        "display": "PINK",
+        "row": 1,
         "col": 7,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "BLUE",
+        "display": "BLUE",
+        "row": 3,
+        "col": 3,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "ORANGE",
+        "display": "ORANGE",
+        "row": 3,
+        "col": 5,
+        "direction": "down"
+      },
+      {
+        "number": 5,
+        "word": "GREY",
+        "display": "GREY",
+        "row": 6,
+        "col": 1,
         "direction": "down"
       },
       {
         "number": 8,
         "word": "WHITE",
         "display": "WHITE",
-        "clue": "The colour of snow and milk.",
-        "row": 6,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 1,
-        "word": "BROWN",
-        "display": "BROWN",
-        "clue": "The colour of chocolate and most tree trunks.",
-        "row": 0,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 1,
-        "word": "BLACK",
-        "display": "BLACK",
-        "clue": "The darkest colour; the colour of night.",
-        "row": 0,
-        "col": 5,
-        "direction": "across"
-      },
-      {
-        "number": 10,
-        "word": "BLUE",
-        "display": "BLUE",
-        "clue": "The colour of a clear sky and the ocean.",
-        "row": 10,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "PINK",
-        "display": "PINK",
-        "clue": "A pale red colour, often linked with flowers.",
         "row": 8,
-        "col": 4,
-        "direction": "across"
-      },
-      {
-        "number": 4,
-        "word": "GREY",
-        "display": "GREY",
-        "clue": "A colour between black and white, like a cloudy sky.",
-        "row": 3,
-        "col": 0,
+        "col": 9,
         "direction": "down"
-      },
-      {
-        "number": 5,
-        "word": "RED",
-        "display": "RED",
-        "clue": "The colour of a ripe tomato or a fire engine.",
-        "row": 3,
-        "col": 7,
-        "direction": "across"
       }
     ]
   },
   "below_scale_house": {
     "title": "House",
     "level": "Below Scale",
-    "rows": 15,
-    "cols": 16,
+    "rows": 12,
+    "cols": 17,
+    "clueImage": "crossword-images/below_scale_house.png",
     "words": [
       {
-        "number": 7,
-        "word": "FLOOR",
-        "display": "FLOOR",
-        "clue": "The flat surface you walk on inside a room.",
-        "row": 5,
-        "col": 3,
+        "number": 3,
+        "word": "BATHROOM",
+        "display": "BATHROOM",
+        "row": 1,
+        "col": 4,
         "direction": "across"
       },
       {
-        "number": 8,
+        "number": 7,
         "word": "LIVINGROOM",
         "display": "LIVING ROOM",
-        "clue": "The room where a family relaxes and watches TV.",
+        "row": 3,
+        "col": 7,
+        "direction": "across"
+      },
+      {
+        "number": 9,
+        "word": "KITCHEN",
+        "display": "KITCHEN",
         "row": 5,
-        "col": 4,
-        "direction": "down"
+        "col": 0,
+        "direction": "across"
       },
       {
         "number": 10,
+        "word": "FLOOR",
+        "display": "FLOOR",
+        "row": 5,
+        "col": 11,
+        "direction": "across"
+      },
+      {
+        "number": 12,
         "word": "DININGROOM",
         "display": "DINING ROOM",
-        "clue": "The room where a family usually eats meals together.",
-        "row": 8,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 6,
-        "word": "BATHROOM",
-        "display": "BATHROOM",
-        "clue": "The room where you have a bath or shower.",
-        "row": 4,
-        "col": 9,
-        "direction": "down"
-      },
-      {
-        "number": 6,
-        "word": "BALCONY",
-        "display": "BALCONY",
-        "clue": "An outdoor platform attached to an upper floor of a building.",
-        "row": 4,
-        "col": 9,
-        "direction": "across"
-      },
-      {
-        "number": 1,
-        "word": "BEDROOM",
-        "display": "BEDROOM",
-        "clue": "The room where you sleep.",
-        "row": 0,
-        "col": 6,
-        "direction": "down"
-      },
-      {
-        "number": 2,
-        "word": "KITCHEN",
-        "display": "KITCHEN",
-        "clue": "The room where food is cooked.",
-        "row": 1,
+        "row": 7,
         "col": 1,
         "direction": "across"
       },
       {
         "number": 13,
-        "word": "WINDOW",
-        "display": "WINDOW",
-        "clue": "A glass opening in a wall that lets in light.",
-        "row": 12,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "TOILET",
-        "display": "TOILET",
-        "clue": "The room or fixture used to go to the bathroom.",
-        "row": 6,
-        "col": 9,
-        "direction": "across"
-      },
-      {
-        "number": 11,
-        "word": "GARAGE",
-        "display": "GARAGE",
-        "clue": "A small building where you keep a car.",
-        "row": 10,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 5,
-        "word": "STAIRS",
-        "display": "STAIRS",
-        "clue": "A set of steps that lead from one floor to another.",
-        "row": 3,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 3,
         "word": "WALL",
         "display": "WALL",
-        "clue": "A vertical structure that divides or encloses a room.",
-        "row": 1,
-        "col": 11,
+        "row": 9,
+        "col": 6,
+        "direction": "across"
+      },
+      {
+        "number": 14,
+        "word": "STAIRS",
+        "display": "STAIRS",
+        "row": 11,
+        "col": 7,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "GARAGE",
+        "display": "GARAGE",
+        "row": 0,
+        "col": 5,
         "direction": "down"
       },
       {
-        "number": 12,
-        "word": "DOOR",
-        "display": "DOOR",
-        "clue": "You open and close this to enter or leave a room.",
-        "row": 10,
-        "col": 7,
-        "direction": "across"
+        "number": 2,
+        "word": "BEDROOM",
+        "display": "BEDROOM",
+        "row": 0,
+        "col": 13,
+        "direction": "down"
       },
       {
         "number": 4,
         "word": "HALL",
         "display": "HALL",
-        "clue": "The area just inside the front door that leads to other rooms.",
+        "row": 1,
+        "col": 7,
+        "direction": "down"
+      },
+      {
+        "number": 5,
+        "word": "BALCONY",
+        "display": "BALCONY",
         "row": 2,
-        "col": 10,
-        "direction": "across"
+        "col": 3,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "DOOR",
+        "display": "DOOR",
+        "row": 2,
+        "col": 15,
+        "direction": "down"
+      },
+      {
+        "number": 8,
+        "word": "WINDOW",
+        "display": "WINDOW",
+        "row": 4,
+        "col": 1,
+        "direction": "down"
+      },
+      {
+        "number": 11,
+        "word": "TOILET",
+        "display": "TOILET",
+        "row": 6,
+        "col": 8,
+        "direction": "down"
       }
     ]
   },
   "below_scale_at_home": {
     "title": "At Home",
     "level": "Below Scale",
-    "rows": 8,
-    "cols": 15,
+    "rows": 11,
+    "cols": 14,
+    "clueImage": "crossword-images/below_scale_at_home.png",
     "words": [
       {
-        "number": 5,
-        "word": "BATH",
-        "display": "BATH",
-        "clue": "A large tub you fill with water to wash your whole body.",
-        "row": 3,
-        "col": 4,
-        "direction": "across"
-      },
-      {
         "number": 1,
-        "word": "CUPBOARD",
-        "display": "CUPBOARD",
-        "clue": "A piece of furniture with doors, used for storing things.",
+        "word": "BED",
+        "display": "BED",
         "row": 0,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 4,
-        "word": "SHOWER",
-        "display": "SHOWER",
-        "clue": "A fixture you stand under to wash with running water.",
-        "row": 2,
-        "col": 7,
-        "direction": "down"
-      },
-      {
-        "number": 11,
-        "word": "FRIDGE",
-        "display": "FRIDGE",
-        "clue": "An appliance that keeps food cold.",
-        "row": 7,
-        "col": 6,
+        "col": 1,
         "direction": "across"
-      },
-      {
-        "number": 6,
-        "word": "PHONE",
-        "display": "PHONE",
-        "clue": "A device used to call or message people.",
-        "row": 3,
-        "col": 11,
-        "direction": "down"
-      },
-      {
-        "number": 1,
-        "word": "CLOCK",
-        "display": "CLOCK",
-        "clue": "A device that tells you the time.",
-        "row": 0,
-        "col": 4,
-        "direction": "across"
-      },
-      {
-        "number": 8,
-        "word": "SHELF",
-        "display": "SHELF",
-        "clue": "A flat surface fixed to a wall, used to store or display things.",
-        "row": 4,
-        "col": 10,
-        "direction": "across"
-      },
-      {
-        "number": 2,
-        "word": "TABLE",
-        "display": "TABLE",
-        "clue": "A piece of furniture with a flat top and legs, used for meals.",
-        "row": 1,
-        "col": 13,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "CHAIR",
-        "display": "CHAIR",
-        "clue": "A piece of furniture with a back, made for one person to sit on.",
-        "row": 6,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 4,
-        "word": "SOFA",
-        "display": "SOFA",
-        "clue": "A long, soft seat for two or more people; a couch.",
-        "row": 2,
-        "col": 7,
-        "direction": "across"
-      },
-      {
-        "number": 7,
-        "word": "SOAP",
-        "display": "SOAP",
-        "clue": "You use this with water to wash your hands.",
-        "row": 4,
-        "col": 2,
-        "direction": "down"
       },
       {
         "number": 3,
-        "word": "LAMP",
-        "display": "LAMP",
-        "clue": "A device that gives light, often placed on a table.",
+        "word": "TABLE",
+        "display": "TABLE",
         "row": 2,
         "col": 1,
         "direction": "across"
       },
       {
-        "number": 9,
-        "word": "BED",
-        "display": "BED",
-        "clue": "The piece of furniture you sleep on.",
+        "number": 5,
+        "word": "SOAP",
+        "display": "SOAP",
+        "row": 3,
+        "col": 6,
+        "direction": "across"
+      },
+      {
+        "number": 6,
+        "word": "CUPBOARD",
+        "display": "CUPBOARD",
         "row": 5,
-        "col": 9,
+        "col": 2,
+        "direction": "across"
+      },
+      {
+        "number": 7,
+        "word": "SOFA",
+        "display": "SOFA",
+        "row": 6,
+        "col": 10,
+        "direction": "across"
+      },
+      {
+        "number": 8,
+        "word": "PHONE",
+        "display": "PHONE",
+        "row": 7,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 9,
+        "word": "FRIDGE",
+        "display": "FRIDGE",
+        "row": 8,
+        "col": 5,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "BATH",
+        "display": "BATH",
+        "row": 0,
+        "col": 1,
+        "direction": "down"
+      },
+      {
+        "number": 2,
+        "word": "CHAIR",
+        "display": "CHAIR",
+        "row": 1,
+        "col": 8,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "LAMP",
+        "display": "LAMP",
+        "row": 2,
+        "col": 4,
+        "direction": "down"
+      },
+      {
+        "number": 5,
+        "word": "SHOWER",
+        "display": "SHOWER",
+        "row": 3,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "CLOCK",
+        "display": "CLOCK",
+        "row": 5,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "SHELF",
+        "display": "SHELF",
+        "row": 6,
+        "col": 10,
         "direction": "down"
       }
     ]
@@ -43463,133 +43447,120 @@ const CROSSWORD_PUZZLES = {
   "below_scale_at_school": {
     "title": "At School",
     "level": "Below Scale",
-    "rows": 14,
-    "cols": 15,
+    "rows": 11,
+    "cols": 19,
+    "clueImage": "crossword-images/below_scale_at_school.png",
     "words": [
       {
-        "number": 9,
-        "word": "CLASSROOM",
-        "display": "CLASSROOM",
-        "clue": "The room at school where lessons take place.",
-        "row": 7,
-        "col": 0,
+        "number": 2,
+        "word": "TEACHER",
+        "display": "TEACHER",
+        "row": 1,
+        "col": 6,
         "direction": "across"
       },
       {
-        "number": 2,
-        "word": "WHITEBOARD",
-        "display": "WHITEBOARD",
-        "clue": "A white surface at the front of class that teachers write on.",
-        "row": 1,
-        "col": 6,
-        "direction": "down"
+        "number": 5,
+        "word": "PEN",
+        "display": "PEN",
+        "row": 3,
+        "col": 2,
+        "direction": "across"
+      },
+      {
+        "number": 6,
+        "word": "CLASSROOM",
+        "display": "CLASSROOM",
+        "row": 3,
+        "col": 7,
+        "direction": "across"
       },
       {
         "number": 8,
-        "word": "PENCILCASE",
-        "display": "PENCIL CASE",
-        "clue": "A small bag or box used to keep pens and pencils in.",
+        "word": "RULER",
+        "display": "RULER",
         "row": 5,
         "col": 5,
         "direction": "across"
       },
       {
-        "number": 4,
+        "number": 9,
+        "word": "WHITEBOARD",
+        "display": "WHITEBOARD",
+        "row": 7,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 11,
         "word": "NOTEBOOK",
         "display": "NOTEBOOK",
-        "clue": "A small book of blank pages used for writing notes.",
+        "row": 8,
+        "col": 11,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "PENCILCASE",
+        "display": "PENCIL CASE",
+        "row": 0,
+        "col": 7,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "CHAIR",
+        "display": "CHAIR",
+        "row": 1,
+        "col": 9,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "BOOK",
+        "display": "BOOK",
         "row": 2,
-        "col": 14,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "STUDENT",
-        "display": "STUDENT",
-        "clue": "A person who studies at a school.",
-        "row": 7,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 7,
-        "word": "TEACHER",
-        "display": "TEACHER",
-        "clue": "The person who teaches a class at school.",
-        "row": 5,
-        "col": 2,
+        "col": 13,
         "direction": "down"
       },
       {
         "number": 5,
         "word": "PENCIL",
         "display": "PENCIL",
-        "clue": "A wooden writing tool with a graphite tip.",
         "row": 3,
         "col": 2,
-        "direction": "across"
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "STUDENT",
+        "display": "STUDENT",
+        "row": 3,
+        "col": 11,
+        "direction": "down"
+      },
+      {
+        "number": 8,
+        "word": "RUBBER",
+        "display": "RUBBER",
+        "row": 5,
+        "col": 5,
+        "direction": "down"
+      },
+      {
+        "number": 10,
+        "word": "DESK",
+        "display": "DESK",
+        "row": 7,
+        "col": 9,
+        "direction": "down"
       },
       {
         "number": 12,
-        "word": "RUBBER",
-        "display": "RUBBER",
-        "clue": "A small tool used to erase pencil marks.",
-        "row": 9,
-        "col": 6,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "CHAIR",
-        "display": "CHAIR",
-        "clue": "A piece of furniture students sit on in class.",
-        "row": 7,
-        "col": 0,
-        "direction": "down"
-      },
-      {
-        "number": 1,
-        "word": "RULER",
-        "display": "RULER",
-        "clue": "A flat tool used to draw straight lines or measure length.",
-        "row": 0,
-        "col": 3,
-        "direction": "down"
-      },
-      {
-        "number": 11,
-        "word": "DESK",
-        "display": "DESK",
-        "clue": "A table used for writing or studying, often with a chair.",
-        "row": 8,
-        "col": 10,
-        "direction": "down"
-      },
-      {
-        "number": 13,
-        "word": "BOOK",
-        "display": "BOOK",
-        "clue": "A set of printed pages bound together, used for reading or studying.",
-        "row": 9,
-        "col": 8,
-        "direction": "down"
-      },
-      {
-        "number": 3,
-        "word": "PEN",
-        "display": "PEN",
-        "clue": "A tool used for writing in ink.",
-        "row": 2,
-        "col": 12,
-        "direction": "across"
-      },
-      {
-        "number": 6,
         "word": "BAG",
         "display": "BAG",
-        "clue": "Students carry their books and supplies to school in this.",
-        "row": 4,
-        "col": 12,
+        "row": 8,
+        "col": 15,
         "direction": "down"
       }
     ]
@@ -43597,142 +43568,128 @@ const CROSSWORD_PUZZLES = {
   "below_scale_food": {
     "title": "Food",
     "level": "Below Scale",
-    "rows": 11,
-    "cols": 16,
+    "rows": 13,
+    "cols": 15,
+    "clueImage": "crossword-images/below_scale_food.png",
     "words": [
       {
-        "number": 6,
-        "word": "ORANGE",
-        "display": "ORANGE",
-        "clue": "A round citrus fruit with a thick orange peel.",
-        "row": 2,
-        "col": 5,
-        "direction": "across"
-      },
-      {
         "number": 1,
-        "word": "CHOCOLATE",
-        "display": "CHOCOLATE",
-        "clue": "A sweet brown food made from cocoa beans.",
+        "word": "BREAD",
+        "display": "BREAD",
         "row": 0,
         "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 5,
-        "word": "SANDWICH",
-        "display": "SANDWICH",
-        "clue": "Two slices of bread with a filling in between.",
-        "row": 1,
-        "col": 7,
-        "direction": "down"
-      },
-      {
-        "number": 3,
-        "word": "ICECREAM",
-        "display": "ICE CREAM",
-        "clue": "A frozen, sweet dessert often served in a cone.",
-        "row": 0,
-        "col": 10,
-        "direction": "down"
-      },
-      {
-        "number": 2,
-        "word": "BISCUIT",
-        "display": "BISCUIT",
-        "clue": "A small, flat, baked snack, often sweet.",
-        "row": 0,
-        "col": 9,
-        "direction": "across"
-      },
-      {
-        "number": 11,
-        "word": "BANANA",
-        "display": "BANANA",
-        "clue": "A long, curved yellow fruit.",
-        "row": 6,
-        "col": 9,
-        "direction": "across"
-      },
-      {
-        "number": 8,
-        "word": "CHEESE",
-        "display": "CHEESE",
-        "clue": "A dairy food made from milk, often used on sandwiches or pizza.",
-        "row": 3,
-        "col": 10,
-        "direction": "across"
-      },
-      {
-        "number": 10,
-        "word": "POTATO",
-        "display": "POTATO",
-        "clue": "A starchy root vegetable, often used to make chips.",
-        "row": 4,
-        "col": 0,
         "direction": "across"
       },
       {
         "number": 4,
-        "word": "TOMATO",
-        "display": "TOMATO",
-        "clue": "A round, red fruit often used in salads and sauces.",
-        "row": 1,
-        "col": 3,
-        "direction": "down"
+        "word": "PIZZA",
+        "display": "PIZZA",
+        "row": 2,
+        "col": 8,
+        "direction": "across"
       },
       {
-        "number": 12,
-        "word": "APPLE",
-        "display": "APPLE",
-        "clue": "A round fruit that can be red, green, or yellow.",
-        "row": 6,
-        "col": 12,
-        "direction": "down"
+        "number": 7,
+        "word": "ICECREAM",
+        "display": "ICE CREAM",
+        "row": 4,
+        "col": 6,
+        "direction": "across"
       },
       {
-        "number": 14,
-        "word": "BREAD",
-        "display": "BREAD",
-        "clue": "A basic food made from flour, water, and yeast, often sliced.",
-        "row": 10,
-        "col": 10,
+        "number": 8,
+        "word": "CAKE",
+        "display": "CAKE",
+        "row": 5,
+        "col": 0,
         "direction": "across"
       },
       {
         "number": 10,
-        "word": "PIZZA",
-        "display": "PIZZA",
-        "clue": "An Italian dish with a round, flat base topped with cheese and tomato.",
-        "row": 4,
-        "col": 0,
-        "direction": "down"
-      },
-      {
-        "number": 7,
-        "word": "LEMON",
-        "display": "LEMON",
-        "clue": "A sour yellow citrus fruit.",
-        "row": 2,
-        "col": 13,
-        "direction": "down"
-      },
-      {
-        "number": 13,
-        "word": "CAKE",
-        "display": "CAKE",
-        "clue": "A sweet baked dessert, often eaten on birthdays.",
-        "row": 8,
-        "col": 2,
+        "word": "TOMATO",
+        "display": "TOMATO",
+        "row": 6,
+        "col": 9,
         "direction": "across"
       },
       {
-        "number": 9,
+        "number": 13,
+        "word": "SANDWICH",
+        "display": "SANDWICH",
+        "row": 8,
+        "col": 1,
+        "direction": "across"
+      },
+      {
+        "number": 14,
         "word": "EGG",
         "display": "EGG",
-        "clue": "An oval food laid by a hen, often boiled or fried.",
+        "row": 10,
+        "col": 8,
+        "direction": "across"
+      },
+      {
+        "number": 15,
+        "word": "CHOCOLATE",
+        "display": "CHOCOLATE",
+        "row": 12,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 2,
+        "word": "APPLE",
+        "display": "APPLE",
+        "row": 0,
+        "col": 8,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "BANANA",
+        "display": "BANANA",
+        "row": 1,
+        "col": 12,
+        "direction": "down"
+      },
+      {
+        "number": 5,
+        "word": "BISCUIT",
+        "display": "BISCUIT",
         "row": 3,
-        "col": 15,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "LEMON",
+        "display": "LEMON",
+        "row": 4,
+        "col": 3,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "POTATO",
+        "display": "POTATO",
+        "row": 5,
+        "col": 14,
+        "direction": "down"
+      },
+      {
+        "number": 11,
+        "word": "ORANGE",
+        "display": "ORANGE",
+        "row": 6,
+        "col": 10,
+        "direction": "down"
+      },
+      {
+        "number": 12,
+        "word": "CHEESE",
+        "display": "CHEESE",
+        "row": 7,
+        "col": 8,
         "direction": "down"
       }
     ]
@@ -43741,132 +43698,119 @@ const CROSSWORD_PUZZLES = {
     "title": "Food And Drinks",
     "level": "Below Scale",
     "rows": 12,
-    "cols": 14,
+    "cols": 16,
+    "clueImage": "crossword-images/below_scale_food_and_drinks.png",
     "words": [
       {
-        "number": 4,
-        "word": "COFFEE",
-        "display": "COFFEE",
-        "clue": "A hot drink made from roasted, ground beans.",
+        "number": 3,
+        "word": "MEAT",
+        "display": "MEAT",
         "row": 1,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 2,
-        "word": "VEGETABLES",
-        "display": "VEGETABLES",
-        "clue": "Plant foods like carrots or potatoes, often eaten with meals.",
-        "row": 0,
-        "col": 6,
-        "direction": "down"
-      },
-      {
-        "number": 1,
-        "word": "YOGHURT",
-        "display": "YOGHURT",
-        "clue": "A thick, creamy dairy food made from fermented milk.",
-        "row": 0,
-        "col": 3,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "BUTTER",
-        "display": "BUTTER",
-        "clue": "A soft, yellow dairy food spread on bread.",
-        "row": 6,
-        "col": 6,
+        "col": 7,
         "direction": "across"
       },
       {
         "number": 5,
-        "word": "CARROT",
-        "display": "CARROT",
-        "clue": "A long, orange root vegetable.",
-        "row": 1,
-        "col": 9,
-        "direction": "down"
-      },
-      {
-        "number": 7,
         "word": "GRAPES",
         "display": "GRAPES",
-        "clue": "Small, round fruits that grow in bunches on a vine.",
         "row": 3,
-        "col": 8,
-        "direction": "across"
-      },
-      {
-        "number": 8,
-        "word": "FRUIT",
-        "display": "FRUIT",
-        "clue": "The sweet, edible part of a plant, like an apple or banana.",
-        "row": 5,
-        "col": 11,
-        "direction": "down"
-      },
-      {
-        "number": 3,
-        "word": "WATER",
-        "display": "WATER",
-        "clue": "A clear liquid that all living things need to drink.",
-        "row": 0,
-        "col": 12,
-        "direction": "down"
-      },
-      {
-        "number": 14,
-        "word": "CHIPS",
-        "display": "CHIPS",
-        "clue": "Long, fried strips of potato.",
-        "row": 9,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 12,
-        "word": "JUICE",
-        "display": "JUICE",
-        "clue": "A drink made from the liquid of fruit.",
-        "row": 7,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 13,
-        "word": "MILK",
-        "display": "MILK",
-        "clue": "A white drink that comes from cows and other animals.",
-        "row": 8,
-        "col": 10,
+        "col": 5,
         "direction": "across"
       },
       {
         "number": 6,
-        "word": "FISH",
-        "display": "FISH",
-        "clue": "An animal that lives in water and is often eaten as food.",
-        "row": 3,
+        "word": "JUICE",
+        "display": "JUICE",
+        "row": 5,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 8,
+        "word": "CARROT",
+        "display": "CARROT",
+        "row": 7,
         "col": 0,
         "direction": "across"
       },
       {
         "number": 9,
-        "word": "MEAT",
-        "display": "MEAT",
-        "clue": "Animal flesh eaten as food, like beef or chicken.",
-        "row": 6,
-        "col": 0,
+        "word": "FRUIT",
+        "display": "FRUIT",
+        "row": 7,
+        "col": 7,
         "direction": "across"
       },
       {
-        "number": 11,
+        "number": 13,
+        "word": "VEGETABLES",
+        "display": "VEGETABLES",
+        "row": 9,
+        "col": 6,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "WATER",
+        "display": "WATER",
+        "row": 0,
+        "col": 9,
+        "direction": "down"
+      },
+      {
+        "number": 2,
+        "word": "YOGHURT",
+        "display": "YOGHURT",
+        "row": 1,
+        "col": 5,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "BUTTER",
+        "display": "BUTTER",
+        "row": 2,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "COFFEE",
+        "display": "COFFEE",
+        "row": 5,
+        "col": 7,
+        "direction": "down"
+      },
+      {
+        "number": 8,
+        "word": "CHIPS",
+        "display": "CHIPS",
+        "row": 7,
+        "col": 0,
+        "direction": "down"
+      },
+      {
+        "number": 10,
         "word": "TEA",
         "display": "TEA",
-        "clue": "A hot drink made by soaking leaves in boiling water.",
-        "row": 6,
-        "col": 8,
+        "row": 7,
+        "col": 11,
+        "direction": "down"
+      },
+      {
+        "number": 11,
+        "word": "MILK",
+        "display": "MILK",
+        "row": 7,
+        "col": 13,
+        "direction": "down"
+      },
+      {
+        "number": 12,
+        "word": "FISH",
+        "display": "FISH",
+        "row": 7,
+        "col": 15,
         "direction": "down"
       }
     ]
@@ -43875,159 +43819,143 @@ const CROSSWORD_PUZZLES = {
     "title": "Animals",
     "level": "Below Scale",
     "rows": 15,
-    "cols": 11,
+    "cols": 14,
+    "clueImage": "crossword-images/below_scale_animals.png",
     "words": [
       {
-        "number": 8,
-        "word": "CAT",
-        "display": "CAT",
-        "clue": "A small, furry pet animal that says 'meow'.",
-        "row": 5,
-        "col": 8,
-        "direction": "across"
-      },
-      {
-        "number": 2,
-        "word": "ELEPHANT",
-        "display": "ELEPHANT",
-        "clue": "A huge grey animal with a long trunk and big ears.",
-        "row": 0,
-        "col": 9,
-        "direction": "down"
-      },
-      {
         "number": 3,
-        "word": "CHICKEN",
-        "display": "CHICKEN",
-        "clue": "A farm bird that lays eggs.",
-        "row": 2,
-        "col": 4,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "RABBIT",
-        "display": "RABBIT",
-        "clue": "A small animal with long ears that hops.",
-        "row": 7,
-        "col": 4,
-        "direction": "across"
-      },
-      {
-        "number": 1,
-        "word": "MONKEY",
-        "display": "MONKEY",
-        "clue": "An animal that climbs trees and looks similar to humans.",
-        "row": 0,
+        "word": "LION",
+        "display": "LION",
+        "row": 1,
         "col": 5,
-        "direction": "across"
-      },
-      {
-        "number": 7,
-        "word": "SNAKE",
-        "display": "SNAKE",
-        "clue": "A long, legless reptile that slithers on the ground.",
-        "row": 5,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 6,
-        "word": "MOUSE",
-        "display": "MOUSE",
-        "clue": "A small grey rodent with a long tail.",
-        "row": 5,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 10,
-        "word": "SHEEP",
-        "display": "SHEEP",
-        "clue": "A woolly farm animal that says 'baa'.",
-        "row": 9,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 11,
-        "word": "HORSE",
-        "display": "HORSE",
-        "clue": "A large animal people ride and use for farm work.",
-        "row": 9,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 13,
-        "word": "TIGER",
-        "display": "TIGER",
-        "clue": "A large wild cat with orange fur and black stripes.",
-        "row": 11,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 12,
-        "word": "FISH",
-        "display": "FISH",
-        "clue": "An animal that lives and swims in water.",
-        "row": 10,
-        "col": 1,
-        "direction": "down"
-      },
-      {
-        "number": 16,
-        "word": "BEAR",
-        "display": "BEAR",
-        "clue": "A large, furry wild animal found in forests.",
-        "row": 13,
-        "col": 3,
         "direction": "across"
       },
       {
         "number": 5,
-        "word": "LION",
-        "display": "LION",
-        "clue": "A large, powerful wild cat known as the king of the jungle.",
+        "word": "HORSE",
+        "display": "HORSE",
+        "row": 4,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 7,
+        "word": "COW",
+        "display": "COW",
+        "row": 6,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 8,
+        "word": "SHEEP",
+        "display": "SHEEP",
+        "row": 6,
+        "col": 9,
+        "direction": "across"
+      },
+      {
+        "number": 11,
+        "word": "MONKEY",
+        "display": "MONKEY",
+        "row": 9,
+        "col": 2,
+        "direction": "across"
+      },
+      {
+        "number": 12,
+        "word": "CAT",
+        "display": "CAT",
+        "row": 9,
+        "col": 10,
+        "direction": "across"
+      },
+      {
+        "number": 13,
+        "word": "RABBIT",
+        "display": "RABBIT",
+        "row": 11,
+        "col": 6,
+        "direction": "across"
+      },
+      {
+        "number": 15,
+        "word": "FISH",
+        "display": "FISH",
+        "row": 12,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 16,
+        "word": "DOG",
+        "display": "DOG",
+        "row": 14,
+        "col": 8,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "TIGER",
+        "display": "TIGER",
+        "row": 0,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 2,
+        "word": "SNAKE",
+        "display": "SNAKE",
+        "row": 0,
+        "col": 8,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "CHICKEN",
+        "display": "CHICKEN",
         "row": 3,
-        "col": 3,
+        "col": 4,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "ELEPHANT",
+        "display": "ELEPHANT",
+        "row": 4,
+        "col": 11,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "PIG",
+        "display": "PIG",
+        "row": 6,
+        "col": 13,
+        "direction": "down"
+      },
+      {
+        "number": 10,
+        "word": "BEAR",
+        "display": "BEAR",
+        "row": 8,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 11,
+        "word": "MOUSE",
+        "display": "MOUSE",
+        "row": 9,
+        "col": 2,
         "direction": "down"
       },
       {
         "number": 14,
         "word": "BIRD",
         "display": "BIRD",
-        "clue": "A flying animal with feathers and a beak.",
         "row": 11,
-        "col": 6,
-        "direction": "down"
-      },
-      {
-        "number": 17,
-        "word": "DOG",
-        "display": "DOG",
-        "clue": "A common pet animal that barks.",
-        "row": 14,
-        "col": 6,
-        "direction": "across"
-      },
-      {
-        "number": 15,
-        "word": "PIG",
-        "display": "PIG",
-        "clue": "A pink farm animal that says 'oink'.",
-        "row": 12,
         "col": 8,
-        "direction": "down"
-      },
-      {
-        "number": 4,
-        "word": "COW",
-        "display": "COW",
-        "clue": "A large farm animal that gives milk.",
-        "row": 2,
-        "col": 7,
         "direction": "down"
       }
     ]
@@ -44035,285 +43963,257 @@ const CROSSWORD_PUZZLES = {
   "below_scale_family": {
     "title": "Family",
     "level": "Below Scale",
-    "rows": 15,
+    "rows": 35,
     "cols": 17,
+    "clueImage": "crossword-images/below_scale_family.png",
     "words": [
-      {
-        "number": 8,
-        "word": "BROTHER",
-        "display": "BROTHER",
-        "clue": "A boy who has the same parents as you.",
-        "row": 3,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 6,
-        "word": "GRANDDAUGHTER",
-        "display": "GRANDDAUGHTER",
-        "clue": "The daughter of your son or daughter.",
-        "row": 2,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 7,
-        "word": "GRANDMOTHER",
-        "display": "GRANDMOTHER",
-        "clue": "The mother of your mother or father.",
-        "row": 2,
-        "col": 9,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "GRANDFATHER",
-        "display": "GRANDFATHER",
-        "clue": "The father of your mother or father.",
-        "row": 5,
-        "col": 6,
-        "direction": "across"
-      },
-      {
-        "number": 13,
-        "word": "CHILDREN",
-        "display": "CHILDREN",
-        "clue": "The plural of child; young sons and daughters.",
-        "row": 10,
-        "col": 8,
-        "direction": "across"
-      },
-      {
-        "number": 5,
-        "word": "DAUGHTER",
-        "display": "DAUGHTER",
-        "clue": "A person's female child.",
-        "row": 1,
-        "col": 14,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "GRANDSON",
-        "display": "GRANDSON",
-        "clue": "The son of your son or daughter.",
-        "row": 5,
-        "col": 6,
-        "direction": "down"
-      },
-      {
-        "number": 4,
-        "word": "HUSBAND",
-        "display": "HUSBAND",
-        "clue": "A married man, in relation to his wife.",
-        "row": 1,
-        "col": 12,
-        "direction": "down"
-      },
-      {
-        "number": 16,
-        "word": "NEPHEW",
-        "display": "NEPHEW",
-        "clue": "Your brother's or sister's son.",
-        "row": 13,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 12,
-        "word": "SISTER",
-        "display": "SISTER",
-        "clue": "A girl who has the same parents as you.",
-        "row": 9,
-        "col": 1,
-        "direction": "down"
-      },
       {
         "number": 2,
         "word": "FATHER",
         "display": "FATHER",
-        "clue": "Your male parent; also called dad.",
-        "row": 0,
-        "col": 7,
-        "direction": "down"
+        "row": 1,
+        "col": 1,
+        "direction": "across"
       },
       {
-        "number": 3,
-        "word": "MOTHER",
-        "display": "MOTHER",
-        "clue": "Your female parent; also called mum.",
-        "row": 0,
-        "col": 16,
-        "direction": "down"
+        "number": 4,
+        "word": "GRANDFATHER",
+        "display": "GRANDFATHER",
+        "row": 4,
+        "col": 0,
+        "direction": "across"
       },
       {
-        "number": 14,
+        "number": 8,
         "word": "NIECE",
         "display": "NIECE",
-        "clue": "Your brother's or sister's daughter.",
-        "row": 10,
-        "col": 15,
-        "direction": "down"
-      },
-      {
-        "number": 15,
-        "word": "UNCLE",
-        "display": "UNCLE",
-        "clue": "The brother of your mother or father.",
-        "row": 12,
-        "col": 11,
-        "direction": "across"
-      },
-      {
-        "number": 11,
-        "word": "AUNT",
-        "display": "AUNT",
-        "clue": "The sister of your mother or father.",
-        "row": 8,
-        "col": 4,
-        "direction": "across"
-      },
-      {
-        "number": 1,
-        "word": "WIFE",
-        "display": "WIFE",
-        "clue": "A married woman, in relation to her husband.",
-        "row": 0,
-        "col": 5,
+        "row": 6,
+        "col": 2,
         "direction": "across"
       },
       {
         "number": 9,
         "word": "SON",
         "display": "SON",
-        "clue": "A person's male child.",
-        "row": 5,
-        "col": 2,
+        "row": 6,
+        "col": 8,
         "direction": "across"
+      },
+      {
+        "number": 11,
+        "word": "GRANDMOTHER",
+        "display": "GRANDMOTHER",
+        "row": 8,
+        "col": 6,
+        "direction": "across"
+      },
+      {
+        "number": 12,
+        "word": "SISTER",
+        "display": "SISTER",
+        "row": 9,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 13,
+        "word": "DAUGHTER",
+        "display": "DAUGHTER",
+        "row": 10,
+        "col": 8,
+        "direction": "across"
+      },
+      {
+        "number": 14,
+        "word": "NEPHEW",
+        "display": "NEPHEW",
+        "row": 11,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 16,
+        "word": "BROTHER",
+        "display": "BROTHER",
+        "row": 15,
+        "col": 9,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "CHILDREN",
+        "display": "CHILDREN",
+        "row": 0,
+        "col": 4,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "GRANDDAUGHTER",
+        "display": "GRANDDAUGHTER",
+        "row": 3,
+        "col": 10,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "GRANDSON",
+        "display": "GRANDSON",
+        "row": 4,
+        "col": 0,
+        "direction": "down"
+      },
+      {
+        "number": 5,
+        "word": "AUNT",
+        "display": "AUNT",
+        "row": 4,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "HUSBAND",
+        "display": "HUSBAND",
+        "row": 4,
+        "col": 8,
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "UNCLE",
+        "display": "UNCLE",
+        "row": 4,
+        "col": 15,
+        "direction": "down"
+      },
+      {
+        "number": 10,
+        "word": "MOTHER",
+        "display": "MOTHER",
+        "row": 7,
+        "col": 12,
+        "direction": "down"
+      },
+      {
+        "number": 15,
+        "word": "WIFEOKRDEEYRSNUMBER:2733",
+        "display": "WIFE OKRDEEYRS NUMBER: 2733",
+        "row": 11,
+        "col": 5,
+        "direction": "down"
       }
     ]
   },
   "below_scale_some_useful_verbs": {
     "title": "Some Useful Verbs",
     "level": "Below Scale",
-    "rows": 16,
-    "cols": 12,
+    "rows": 14,
+    "cols": 9,
+    "clueImage": "crossword-images/below_scale_some_useful_verbs.png",
     "words": [
-      {
-        "number": 3,
-        "word": "JUMP",
-        "display": "JUMP",
-        "clue": "To push yourself off the ground into the air.",
-        "row": 6,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 4,
-        "word": "PAINT",
-        "display": "PAINT",
-        "clue": "To cover a surface with colour, or to make a picture.",
-        "row": 6,
-        "col": 3,
-        "direction": "down"
-      },
-      {
-        "number": 6,
-        "word": "TEACH",
-        "display": "TEACH",
-        "clue": "To help someone learn something.",
-        "row": 10,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 7,
-        "word": "CLOSE",
-        "display": "CLOSE",
-        "clue": "To shut something, like a door or book.",
-        "row": 10,
-        "col": 6,
-        "direction": "down"
-      },
-      {
-        "number": 11,
-        "word": "STAND",
-        "display": "STAND",
-        "clue": "To be on your feet, upright.",
-        "row": 13,
-        "col": 6,
-        "direction": "across"
-      },
-      {
-        "number": 5,
-        "word": "WAIT",
-        "display": "WAIT",
-        "clue": "To stay in one place until something happens.",
-        "row": 8,
-        "col": 1,
-        "direction": "across"
-      },
-      {
-        "number": 2,
-        "word": "SWIM",
-        "display": "SWIM",
-        "clue": "To move through water using your arms and legs.",
-        "row": 3,
-        "col": 2,
-        "direction": "down"
-      },
       {
         "number": 2,
         "word": "SING",
         "display": "SING",
-        "clue": "To make music with your voice.",
-        "row": 3,
-        "col": 2,
+        "row": 1,
+        "col": 4,
         "direction": "across"
       },
       {
-        "number": 1,
-        "word": "OPEN",
-        "display": "OPEN",
-        "clue": "To make something no longer closed, like a door.",
-        "row": 0,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "TALK",
-        "display": "TALK",
-        "clue": "To speak with someone.",
-        "row": 12,
-        "col": 8,
-        "direction": "down"
-      },
-      {
-        "number": 8,
-        "word": "FIND",
-        "display": "FIND",
-        "clue": "To discover something you were looking for.",
-        "row": 10,
-        "col": 10,
-        "direction": "down"
-      },
-      {
-        "number": 9,
-        "word": "SIT",
-        "display": "SIT",
-        "clue": "To rest your body on a chair or the ground.",
-        "row": 11,
-        "col": 9,
+        "number": 3,
+        "word": "STAND",
+        "display": "STAND",
+        "row": 3,
+        "col": 1,
         "direction": "across"
       },
       {
         "number": 5,
+        "word": "CLOSE",
+        "display": "CLOSE",
+        "row": 5,
+        "col": 1,
+        "direction": "across"
+      },
+      {
+        "number": 8,
+        "word": "TEACH",
+        "display": "TEACH",
+        "row": 7,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 10,
+        "word": "PAINT",
+        "display": "PAINT",
+        "row": 9,
+        "col": 2,
+        "direction": "across"
+      },
+      {
+        "number": 12,
         "word": "WIN",
         "display": "WIN",
-        "clue": "To finish first or beat others in a game or contest.",
+        "row": 11,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 13,
+        "word": "JUMP",
+        "display": "JUMP",
+        "row": 13,
+        "col": -2,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "FIND",
+        "display": "FIND",
+        "row": 0,
+        "col": 5,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "TALK",
+        "display": "TALK",
+        "row": 3,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "SIT",
+        "display": "SIT",
+        "row": 5,
+        "col": 4,
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "WAIT",
+        "display": "WAIT",
+        "row": 6,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "OPEN",
+        "display": "OPEN",
         "row": 8,
-        "col": 1,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 11,
+        "word": "SWIM",
+        "display": "SWIM",
+        "row": 10,
+        "col": 0,
         "direction": "down"
       }
     ]
@@ -44322,114 +44222,103 @@ const CROSSWORD_PUZZLES = {
     "title": "Transport",
     "level": "Below Scale",
     "rows": 11,
-    "cols": 14,
+    "cols": 13,
+    "clueImage": "crossword-images/below_scale_transport.png",
     "words": [
       {
-        "number": 4,
-        "word": "BIKE",
-        "display": "BIKE",
-        "clue": "A two-wheeled vehicle you pedal.",
-        "row": 3,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 3,
-        "word": "UNDERGROUND",
-        "display": "UNDERGROUND",
-        "clue": "A railway system that runs in tunnels below a city.",
-        "row": 0,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "MOTORBIKE",
-        "display": "MOTORBIKE",
-        "clue": "A two-wheeled motor vehicle, faster than a bike.",
-        "row": 7,
-        "col": 4,
-        "direction": "across"
-      },
-      {
         "number": 2,
-        "word": "TRAIN",
-        "display": "TRAIN",
-        "clue": "A long vehicle that runs on railway tracks.",
-        "row": 0,
-        "col": 3,
-        "direction": "down"
-      },
-      {
-        "number": 11,
-        "word": "PLANE",
-        "display": "PLANE",
-        "clue": "A vehicle with wings that flies through the air.",
-        "row": 9,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 6,
-        "word": "LORRY",
-        "display": "LORRY",
-        "clue": "A large vehicle used to transport goods by road.",
-        "row": 4,
-        "col": 8,
-        "direction": "down"
-      },
-      {
-        "number": 7,
-        "word": "TAXI",
-        "display": "TAXI",
-        "clue": "A car you can hire, with a driver, for a single trip.",
-        "row": 4,
-        "col": 10,
-        "direction": "down"
-      },
-      {
-        "number": 9,
-        "word": "SHIP",
-        "display": "SHIP",
-        "clue": "A large vessel used to carry people or goods across the sea.",
-        "row": 6,
-        "col": 2,
-        "direction": "down"
-      },
-      {
-        "number": 1,
-        "word": "BOAT",
-        "display": "BOAT",
-        "clue": "A small vehicle used to travel on water.",
-        "row": 0,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 7,
         "word": "TRAM",
         "display": "TRAM",
-        "clue": "A vehicle that runs on rails through city streets.",
-        "row": 4,
-        "col": 10,
+        "row": 0,
+        "col": 9,
         "direction": "across"
       },
       {
-        "number": 8,
-        "word": "BUS",
-        "display": "BUS",
-        "clue": "A large road vehicle that carries many passengers.",
-        "row": 6,
-        "col": 0,
+        "number": 4,
+        "word": "BOAT",
+        "display": "BOAT",
+        "row": 2,
+        "col": 3,
         "direction": "across"
       },
       {
         "number": 5,
         "word": "CAR",
         "display": "CAR",
-        "clue": "A small road vehicle with four wheels, used by families.",
+        "row": 2,
+        "col": 8,
+        "direction": "across"
+      },
+      {
+        "number": 7,
+        "word": "UNDERGROUND",
+        "display": "UNDERGROUND",
+        "row": 4,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 8,
+        "word": "BIKE",
+        "display": "BIKE",
+        "row": 6,
+        "col": 5,
+        "direction": "across"
+      },
+      {
+        "number": 10,
+        "word": "PLANE",
+        "display": "PLANE",
+        "row": 8,
+        "col": 2,
+        "direction": "across"
+      },
+      {
+        "number": 11,
+        "word": "SHIP",
+        "display": "SHIP",
+        "row": 10,
+        "col": 2,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "MOTORBIKE",
+        "display": "MOTORBIKE",
+        "row": 0,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 2,
+        "word": "TRAIN",
+        "display": "TRAIN",
+        "row": 0,
+        "col": 9,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "LORRY",
+        "display": "LORRY",
+        "row": 1,
+        "col": 4,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "BUS",
+        "display": "BUS",
         "row": 3,
-        "col": 12,
+        "col": 0,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "TAXI",
+        "display": "TAXI",
+        "row": 7,
+        "col": 4,
         "direction": "down"
       }
     ]
@@ -44437,231 +44326,209 @@ const CROSSWORD_PUZZLES = {
   "below_scale_clothes_and_accessories_1": {
     "title": "Clothes And Accessories 1",
     "level": "Below Scale",
-    "rows": 13,
-    "cols": 12,
+    "rows": 14,
+    "cols": 15,
+    "clueImage": "crossword-images/below_scale_clothes_and_accessories_1.png",
     "words": [
       {
-        "number": 7,
-        "word": "DRESS",
-        "display": "DRESS",
-        "clue": "A piece of clothing worn by women and girls, covering the body and legs.",
-        "row": 6,
-        "col": 2,
+        "number": 2,
+        "word": "JUMPER",
+        "display": "JUMPER",
+        "row": 1,
+        "col": 0,
         "direction": "across"
       },
       {
-        "number": 6,
-        "word": "TRAINERS",
-        "display": "TRAINERS",
-        "clue": "Soft sports shoes, often worn for exercise.",
-        "row": 5,
-        "col": 3,
-        "direction": "down"
+        "number": 5,
+        "word": "SHORTS",
+        "display": "SHORTS",
+        "row": 3,
+        "col": 5,
+        "direction": "across"
       },
       {
-        "number": 2,
-        "word": "PYJAMAS",
-        "display": "PYJAMAS",
-        "clue": "Loose, comfortable clothing worn for sleeping.",
+        "number": 7,
+        "word": "COAT",
+        "display": "COAT",
+        "row": 5,
+        "col": 9,
+        "direction": "across"
+      },
+      {
+        "number": 9,
+        "word": "GLASSES",
+        "display": "GLASSES",
+        "row": 6,
+        "col": 1,
+        "direction": "across"
+      },
+      {
+        "number": 10,
+        "word": "SCARF",
+        "display": "SCARF",
+        "row": 7,
+        "col": 10,
+        "direction": "across"
+      },
+      {
+        "number": 11,
+        "word": "SHIRT",
+        "display": "SHIRT",
+        "row": 11,
+        "col": 9,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "DRESS",
+        "display": "DRESS",
         "row": 0,
         "col": 5,
         "direction": "down"
       },
       {
         "number": 3,
-        "word": "GLASSES",
-        "display": "GLASSES",
-        "clue": "Lenses in a frame, worn over the eyes to help you see.",
-        "row": 3,
+        "word": "PYJAMAS",
+        "display": "PYJAMAS",
+        "row": 1,
         "col": 3,
-        "direction": "across"
+        "direction": "down"
       },
       {
-        "number": 1,
-        "word": "JUMPER",
-        "display": "JUMPER",
-        "clue": "A warm knitted piece of clothing worn on the upper body.",
-        "row": 0,
-        "col": 2,
-        "direction": "across"
+        "number": 4,
+        "word": "BOOTS",
+        "display": "BOOTS",
+        "row": 2,
+        "col": 7,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "SHOES",
+        "display": "SHOES",
+        "row": 3,
+        "col": 10,
+        "direction": "down"
       },
       {
         "number": 8,
-        "word": "SHORTS",
-        "display": "SHORTS",
-        "clue": "Short trousers that end above the knee.",
-        "row": 6,
-        "col": 6,
+        "word": "TRAINERS",
+        "display": "TRAINERS",
+        "row": 5,
+        "col": 12,
         "direction": "down"
       },
       {
         "number": 12,
-        "word": "SHOES",
-        "display": "SHOES",
-        "clue": "Footwear worn to cover and protect your feet.",
-        "row": 11,
-        "col": 6,
-        "direction": "across"
-      },
-      {
-        "number": 4,
-        "word": "SHIRT",
-        "display": "SHIRT",
-        "clue": "A piece of clothing for the upper body, often with a collar and buttons.",
-        "row": 3,
-        "col": 9,
-        "direction": "down"
-      },
-      {
-        "number": 11,
-        "word": "SCARF",
-        "display": "SCARF",
-        "clue": "A piece of cloth worn around the neck for warmth or style.",
-        "row": 11,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "BOOTS",
-        "display": "BOOTS",
-        "clue": "Sturdy footwear that covers the foot and ankle, or higher.",
-        "row": 7,
-        "col": 0,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "COAT",
-        "display": "COAT",
-        "clue": "A piece of outer clothing worn to keep warm outdoors.",
-        "row": 8,
-        "col": 5,
-        "direction": "across"
-      },
-      {
-        "number": 5,
         "word": "HAT",
         "display": "HAT",
-        "clue": "An item worn on your head.",
-        "row": 4,
-        "col": 9,
-        "direction": "across"
+        "row": 11,
+        "col": 10,
+        "direction": "down"
       }
     ]
   },
   "below_scale_clothes_and_accessories_2": {
     "title": "Clothes And Accessories 2",
     "level": "Below Scale",
-    "rows": 15,
-    "cols": 12,
+    "rows": 13,
+    "cols": 16,
+    "clueImage": "crossword-images/below_scale_clothes_and_accessories_2.png",
     "words": [
       {
-        "number": 7,
+        "number": 1,
         "word": "SUIT",
         "display": "SUIT",
-        "clue": "A matching jacket and trousers, often worn for formal occasions.",
-        "row": 7,
-        "col": 4,
+        "row": 0,
+        "col": 5,
         "direction": "across"
       },
       {
-        "number": 8,
-        "word": "UMBRELLA",
-        "display": "UMBRELLA",
-        "clue": "A folding device you hold over yourself to stay dry in the rain.",
-        "row": 7,
-        "col": 5,
-        "direction": "down"
+        "number": 4,
+        "word": "BLOUSE",
+        "display": "BLOUSE",
+        "row": 2,
+        "col": 6,
+        "direction": "across"
       },
       {
         "number": 6,
         "word": "SWIMSUIT",
         "display": "SWIMSUIT",
-        "clue": "Clothing worn for swimming.",
-        "row": 7,
-        "col": 0,
+        "row": 4,
+        "col": 8,
         "direction": "across"
-      },
-      {
-        "number": 11,
-        "word": "CARDIGAN",
-        "display": "CARDIGAN",
-        "clue": "A knitted jacket that buttons up the front.",
-        "row": 10,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 1,
-        "word": "TROUSERS",
-        "display": "TROUSERS",
-        "clue": "Clothing for the legs, reaching from the waist to the ankles.",
-        "row": 0,
-        "col": 4,
-        "direction": "down"
       },
       {
         "number": 9,
-        "word": "TSHIRT",
-        "display": "T-SHIRT",
-        "clue": "A simple, short-sleeved cotton top.",
+        "word": "JEANS",
+        "display": "JEANS",
         "row": 7,
-        "col": 7,
-        "direction": "down"
-      },
-      {
-        "number": 4,
-        "word": "GLOVES",
-        "display": "GLOVES",
-        "clue": "Items of clothing worn on the hands to keep them warm.",
-        "row": 5,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 3,
-        "word": "BLOUSE",
-        "display": "BLOUSE",
-        "clue": "A loose piece of clothing for the upper body, worn by women.",
-        "row": 2,
-        "col": 2,
+        "col": 4,
         "direction": "across"
       },
       {
         "number": 10,
-        "word": "JACKET",
-        "display": "JACKET",
-        "clue": "A short coat, usually worn outdoors.",
+        "word": "CARDIGAN",
+        "display": "CARDIGAN",
         "row": 9,
-        "col": 9,
-        "direction": "down"
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 11,
+        "word": "GLOVES",
+        "display": "GLOVES",
+        "row": 11,
+        "col": 0,
+        "direction": "across"
       },
       {
         "number": 2,
-        "word": "JEANS",
-        "display": "JEANS",
-        "clue": "Casual trousers usually made from denim.",
-        "row": 1,
-        "col": 7,
+        "word": "UMBRELLA",
+        "display": "UMBRELLA",
+        "row": 0,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "TROUSERS",
+        "display": "TROUSERS",
+        "row": 0,
+        "col": 8,
         "direction": "down"
       },
       {
         "number": 5,
         "word": "SKIRT",
         "display": "SKIRT",
-        "clue": "A piece of women's clothing that hangs from the waist.",
-        "row": 5,
-        "col": 7,
-        "direction": "across"
+        "row": 2,
+        "col": 10,
+        "direction": "down"
       },
       {
-        "number": 6,
+        "number": 7,
         "word": "SOCKS",
         "display": "SOCKS",
-        "clue": "Soft items worn on your feet, under your shoes.",
+        "row": 4,
+        "col": 12,
+        "direction": "down"
+      },
+      {
+        "number": 8,
+        "word": "TSHIRT",
+        "display": "T-SHIRT",
+        "row": 4,
+        "col": 15,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "JACKET",
+        "display": "JACKET",
         "row": 7,
-        "col": 0,
+        "col": 4,
         "direction": "down"
       }
     ]
@@ -44892,141 +44759,127 @@ const CROSSWORD_PUZZLES = {
   "cefr_a1_at_home": {
     "title": "At Home",
     "level": "CEFR A1",
-    "rows": 17,
+    "rows": 16,
     "cols": 13,
+    "clueImage": "crossword-images/cefr_a1_at_home.png",
     "words": [
       {
-        "number": 8,
+        "number": 1,
         "word": "PLATE",
         "display": "PLATE",
-        "clue": "A flat dish used to serve or eat food from.",
-        "row": 7,
-        "col": 1,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "TOOTHBRUSH",
-        "display": "TOOTHBRUSH",
-        "clue": "A small brush used to clean your teeth.",
-        "row": 7,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "TOOTHPASTE",
-        "display": "TOOTHPASTE",
-        "clue": "A paste used with a brush to clean your teeth.",
-        "row": 9,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 13,
-        "word": "ARMCHAIR",
-        "display": "ARMCHAIR",
-        "clue": "A comfortable chair with side supports for your arms.",
-        "row": 13,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 2,
-        "word": "WARDROBE",
-        "display": "WARDROBE",
-        "clue": "A tall cupboard used for storing clothes.",
         "row": 0,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 7,
-        "word": "BLANKET",
-        "display": "BLANKET",
-        "clue": "A thick cloth used to keep warm in bed.",
-        "row": 6,
-        "col": 5,
+        "col": 4,
         "direction": "across"
-      },
-      {
-        "number": 5,
-        "word": "COOKER",
-        "display": "COOKER",
-        "clue": "An appliance used to cook food, with rings and an oven.",
-        "row": 4,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 8,
-        "word": "PILLOW",
-        "display": "PILLOW",
-        "clue": "A soft cushion you rest your head on in bed.",
-        "row": 7,
-        "col": 1,
-        "direction": "down"
       },
       {
         "number": 4,
         "word": "MIRROR",
         "display": "MIRROR",
-        "clue": "A glass surface you look into to see your reflection.",
         "row": 2,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 3,
-        "word": "SPOON",
-        "display": "SPOON",
-        "clue": "A utensil with a small bowl shape, used for eating soup or cereal.",
-        "row": 1,
-        "col": 1,
-        "direction": "down"
-      },
-      {
-        "number": 1,
-        "word": "TOWEL",
-        "display": "TOWEL",
-        "clue": "A piece of cloth used to dry yourself after washing.",
-        "row": 0,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 12,
-        "word": "KNIFE",
-        "display": "KNIFE",
-        "clue": "A tool with a sharp blade used for cutting food.",
-        "row": 11,
-        "col": 9,
-        "direction": "down"
-      },
-      {
-        "number": 14,
-        "word": "BRUSH",
-        "display": "BRUSH",
-        "clue": "A tool with bristles used for hair or cleaning.",
-        "row": 15,
-        "col": 1,
-        "direction": "across"
-      },
-      {
-        "number": 11,
-        "word": "FORK",
-        "display": "FORK",
-        "clue": "A utensil with prongs, used for eating food.",
-        "row": 11,
         "col": 6,
         "direction": "across"
       },
       {
         "number": 6,
+        "word": "TOOTHPASTE",
+        "display": "TOOTHPASTE",
+        "row": 4,
+        "col": 2,
+        "direction": "across"
+      },
+      {
+        "number": 7,
+        "word": "KNIFE",
+        "display": "KNIFE",
+        "row": 6,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 8,
         "word": "BIN",
         "display": "BIN",
-        "clue": "A container used to throw away rubbish.",
+        "row": 6,
+        "col": 10,
+        "direction": "across"
+      },
+      {
+        "number": 10,
+        "word": "PILLOW",
+        "display": "PILLOW",
+        "row": 8,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 12,
+        "word": "BRUSH",
+        "display": "BRUSH",
+        "row": 8,
+        "col": 8,
+        "direction": "across"
+      },
+      {
+        "number": 13,
+        "word": "COOKER",
+        "display": "COOKER",
+        "row": 13,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 2,
+        "word": "ARMCHAIR",
+        "display": "ARMCHAIR",
+        "row": 0,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "TOOTHBRUSH",
+        "display": "TOOTHBRUSH",
+        "row": 1,
+        "col": 10,
+        "direction": "down"
+      },
+      {
+        "number": 5,
+        "word": "FORK",
+        "display": "FORK",
+        "row": 3,
+        "col": 4,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "TOWEL",
+        "display": "TOWEL",
         "row": 4,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "SPOON",
+        "display": "SPOON",
+        "row": 7,
+        "col": 0,
+        "direction": "down"
+      },
+      {
+        "number": 11,
+        "word": "WARDROBE",
+        "display": "WARDROBE",
+        "row": 8,
+        "col": 5,
+        "direction": "down"
+      },
+      {
+        "number": 12,
+        "word": "BLANKET",
+        "display": "BLANKET",
+        "row": 8,
         "col": 8,
         "direction": "down"
       }
@@ -45035,437 +44888,394 @@ const CROSSWORD_PUZZLES = {
   "cefr_a1_professions": {
     "title": "Professions",
     "level": "CEFR A1",
-    "rows": 18,
-    "cols": 16,
+    "rows": 20,
+    "cols": 17,
+    "clueImage": "crossword-images/cefr_a1_professions.png",
     "words": [
       {
-        "number": 7,
-        "word": "POLICEOFFICER",
-        "display": "POLICE OFFICER",
-        "clue": "A person whose job is to enforce the law and keep people safe.",
-        "row": 7,
-        "col": 1,
-        "direction": "across"
-      },
-      {
-        "number": 6,
-        "word": "SHOPASSISTANT",
-        "display": "SHOP ASSISTANT",
-        "clue": "A person who helps customers and sells goods in a shop.",
-        "row": 5,
-        "col": 7,
-        "direction": "down"
-      },
-      {
-        "number": 5,
+        "number": 2,
         "word": "RECEPTIONIST",
         "display": "RECEPTIONIST",
-        "clue": "A person who welcomes visitors and answers calls at an office.",
-        "row": 5,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "ARCHITECT",
-        "display": "ARCHITECT",
-        "clue": "A person who designs buildings.",
-        "row": 9,
-        "col": 7,
-        "direction": "across"
-      },
-      {
-        "number": 6,
-        "word": "SECRETARY",
-        "display": "SECRETARY",
-        "clue": "A person who organises schedules and paperwork in an office.",
-        "row": 5,
-        "col": 7,
-        "direction": "across"
-      },
-      {
-        "number": 11,
-        "word": "ENGINEER",
-        "display": "ENGINEER",
-        "clue": "A person who designs or builds machines, structures, or systems.",
-        "row": 9,
-        "col": 13,
-        "direction": "down"
-      },
-      {
-        "number": 12,
-        "word": "DENTIST",
-        "display": "DENTIST",
-        "clue": "A person who looks after people's teeth.",
-        "row": 12,
-        "col": 9,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "ARTIST",
-        "display": "ARTIST",
-        "clue": "A person who creates paintings, drawings, or other art.",
-        "row": 7,
-        "col": 15,
-        "direction": "down"
-      },
-      {
-        "number": 8,
-        "word": "LAWYER",
-        "display": "LAWYER",
-        "clue": "A person who advises and represents people in legal matters.",
-        "row": 7,
-        "col": 3,
-        "direction": "down"
-      },
-      {
-        "number": 12,
-        "word": "DOCTOR",
-        "display": "DOCTOR",
-        "clue": "A person trained to treat sick or injured people.",
-        "row": 12,
-        "col": 9,
-        "direction": "down"
-      },
-      {
-        "number": 4,
-        "word": "DANCER",
-        "display": "DANCER",
-        "clue": "A person who performs dance as a job.",
-        "row": 5,
+        "row": 2,
         "col": 0,
         "direction": "across"
       },
       {
-        "number": 1,
-        "word": "WAITER",
-        "display": "WAITER",
-        "clue": "A person who serves food and drinks in a restaurant.",
-        "row": 0,
-        "col": 10,
-        "direction": "down"
+        "number": 5,
+        "word": "LAWYER",
+        "display": "LAWYER",
+        "row": 4,
+        "col": 4,
+        "direction": "across"
       },
       {
-        "number": 3,
-        "word": "SINGER",
-        "display": "SINGER",
-        "clue": "A person who performs music with their voice.",
-        "row": 2,
-        "col": 9,
+        "number": 8,
+        "word": "DENTIST",
+        "display": "DENTIST",
+        "row": 7,
+        "col": 3,
+        "direction": "across"
+      },
+      {
+        "number": 10,
+        "word": "DANCER",
+        "display": "DANCER",
+        "row": 7,
+        "col": 11,
+        "direction": "across"
+      },
+      {
+        "number": 11,
+        "word": "VET",
+        "display": "VET",
+        "row": 8,
+        "col": 0,
         "direction": "across"
       },
       {
         "number": 14,
-        "word": "ACTOR",
-        "display": "ACTOR",
-        "clue": "A person who performs in films, TV, or theatre.",
-        "row": 15,
+        "word": "SECRETARY",
+        "display": "SECRETARY",
+        "row": 12,
+        "col": 8,
+        "direction": "across"
+      },
+      {
+        "number": 15,
+        "word": "PILOT",
+        "display": "PILOT",
+        "row": 14,
         "col": 7,
         "direction": "across"
       },
       {
-        "number": 7,
-        "word": "PILOT",
-        "display": "PILOT",
-        "clue": "A person who flies an aircraft.",
-        "row": 7,
+        "number": 16,
+        "word": "ACTOR",
+        "display": "ACTOR",
+        "row": 17,
+        "col": 8,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "SINGER",
+        "display": "SINGER",
+        "row": 0,
+        "col": 8,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "ENGINEER",
+        "display": "ENGINEER",
+        "row": 2,
         "col": 1,
         "direction": "down"
       },
       {
-        "number": 2,
-        "word": "NURSE",
-        "display": "NURSE",
-        "clue": "A person who cares for sick people, often in a hospital.",
-        "row": 1,
+        "number": 4,
+        "word": "POLICEOFFICER",
+        "display": "POLICE OFFICER",
+        "row": 2,
         "col": 4,
         "direction": "down"
       },
       {
+        "number": 6,
+        "word": "WAITER",
+        "display": "WAITER",
+        "row": 4,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "NURSE",
+        "display": "NURSE",
+        "row": 5,
+        "col": 16,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "SHOPASSISTANT",
+        "display": "SHOP ASSISTANT",
+        "row": 7,
+        "col": 8,
+        "direction": "down"
+      },
+      {
+        "number": 10,
+        "word": "DOCTOR",
+        "display": "DOCTOR",
+        "row": 7,
+        "col": 11,
+        "direction": "down"
+      },
+      {
+        "number": 12,
+        "word": "ARTIST",
+        "display": "ARTIST",
+        "row": 10,
+        "col": 13,
+        "direction": "down"
+      },
+      {
         "number": 13,
-        "word": "VET",
-        "display": "VET",
-        "clue": "A doctor who treats sick or injured animals.",
-        "row": 14,
-        "col": 12,
-        "direction": "across"
+        "word": "ARCHITECT",
+        "display": "ARCHITECT",
+        "row": 11,
+        "col": 15,
+        "direction": "down"
       }
     ]
   },
   "cefr_a1_animals": {
     "title": "Animals",
     "level": "CEFR A1",
-    "rows": 17,
-    "cols": 12,
+    "rows": 13,
+    "cols": 20,
+    "clueImage": "crossword-images/cefr_a1_animals.png",
     "words": [
       {
-        "number": 9,
-        "word": "FOX",
-        "display": "FOX",
-        "clue": "A reddish wild animal known for being clever, with a bushy tail.",
-        "row": 5,
-        "col": 0,
+        "number": 5,
+        "word": "CAMEL",
+        "display": "CAMEL",
+        "row": 2,
+        "col": 9,
         "direction": "across"
       },
       {
-        "number": 4,
-        "word": "HIPPOPOTAMUS",
-        "display": "HIPPOPOTAMUS",
-        "clue": "A huge grey animal that spends much of its time in rivers.",
-        "row": 1,
-        "col": 1,
-        "direction": "down"
+        "number": 6,
+        "word": "PANDA",
+        "display": "PANDA",
+        "row": 2,
+        "col": 15,
+        "direction": "across"
+      },
+      {
+        "number": 7,
+        "word": "GIRAFFE",
+        "display": "GIRAFFE",
+        "row": 4,
+        "col": 10,
+        "direction": "across"
+      },
+      {
+        "number": 9,
+        "word": "SPIDER",
+        "display": "SPIDER",
+        "row": 6,
+        "col": 5,
+        "direction": "across"
+      },
+      {
+        "number": 11,
+        "word": "FROG",
+        "display": "FROG",
+        "row": 8,
+        "col": 5,
+        "direction": "across"
       },
       {
         "number": 13,
-        "word": "KANGAROO",
-        "display": "KANGAROO",
-        "clue": "An Australian animal that hops and carries its baby in a pouch.",
-        "row": 9,
-        "col": 0,
+        "word": "OWL",
+        "display": "OWL",
+        "row": 8,
+        "col": 10,
         "direction": "across"
       },
       {
-        "number": 5,
-        "word": "GIRAFFE",
-        "display": "GIRAFFE",
-        "clue": "The tallest land animal, with a very long neck.",
-        "row": 2,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 12,
-        "word": "DONKEY",
-        "display": "DONKEY",
-        "clue": "A farm animal related to the horse, known for being stubborn.",
-        "row": 7,
-        "col": 0,
+        "number": 14,
+        "word": "HIPPOPOTAMUS",
+        "display": "HIPPOPOTAMUS",
+        "row": 10,
+        "col": 2,
         "direction": "across"
       },
       {
         "number": 15,
-        "word": "SPIDER",
-        "display": "SPIDER",
-        "clue": "A small eight-legged creature that spins webs.",
+        "word": "DONKEY",
+        "display": "DONKEY",
         "row": 12,
-        "col": 1,
+        "col": 0,
         "direction": "across"
+      },
+      {
+        "number": 16,
+        "word": "BEE",
+        "display": "BEE",
+        "row": 12,
+        "col": 7,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "WHALE",
+        "display": "WHALE",
+        "row": 0,
+        "col": 16,
+        "direction": "down"
+      },
+      {
+        "number": 2,
+        "word": "GOAT",
+        "display": "GOAT",
+        "row": 0,
+        "col": 19,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "KANGAROO",
+        "display": "KANGAROO",
+        "row": 1,
+        "col": 10,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "ZEBRA",
+        "display": "ZEBRA",
+        "row": 1,
+        "col": 12,
+        "direction": "down"
+      },
+      {
+        "number": 8,
+        "word": "FOX",
+        "display": "FOX",
+        "row": 4,
+        "col": 14,
+        "direction": "down"
       },
       {
         "number": 10,
         "word": "PARROT",
         "display": "PARROT",
-        "clue": "A colourful bird that can sometimes copy human speech.",
-        "row": 5,
-        "col": 7,
-        "direction": "down"
-      },
-      {
-        "number": 2,
-        "word": "WHALE",
-        "display": "WHALE",
-        "clue": "A huge sea mammal that breathes through a blowhole.",
-        "row": 0,
-        "col": 3,
-        "direction": "down"
-      },
-      {
-        "number": 11,
-        "word": "CAMEL",
-        "display": "CAMEL",
-        "clue": "A desert animal with one or two humps on its back.",
         "row": 6,
         "col": 6,
-        "direction": "across"
-      },
-      {
-        "number": 16,
-        "word": "PANDA",
-        "display": "PANDA",
-        "clue": "A black-and-white bear that eats mostly bamboo.",
-        "row": 12,
-        "col": 2,
         "direction": "down"
       },
       {
-        "number": 7,
+        "number": 12,
         "word": "GOOSE",
         "display": "GOOSE",
-        "clue": "A large water bird, bigger than a duck, that honks.",
-        "row": 2,
-        "col": 9,
+        "row": 8,
+        "col": 8,
         "direction": "down"
       },
       {
         "number": 14,
-        "word": "ZEBRA",
-        "display": "ZEBRA",
-        "clue": "An African animal that looks like a horse with black and white stripes.",
-        "row": 11,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 6,
-        "word": "FROG",
-        "display": "FROG",
-        "clue": "A small green animal that hops and lives near water.",
-        "row": 2,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 8,
-        "word": "GOAT",
-        "display": "GOAT",
-        "clue": "A farm animal with horns that likes to climb and eat almost anything.",
-        "row": 4,
-        "col": 8,
-        "direction": "across"
-      },
-      {
-        "number": 3,
-        "word": "BEE",
-        "display": "BEE",
-        "clue": "A flying insect that makes honey and can sting.",
-        "row": 0,
-        "col": 6,
-        "direction": "down"
-      },
-      {
-        "number": 1,
-        "word": "OWL",
-        "display": "OWL",
-        "clue": "A night bird known for its big eyes and \u201ctu-whit tu-whoo\u201d call.",
-        "row": 0,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 17,
         "word": "HEN",
         "display": "HEN",
-        "clue": "A female chicken that lays eggs.",
-        "row": 14,
-        "col": 0,
-        "direction": "across"
+        "row": 10,
+        "col": 2,
+        "direction": "down"
       }
     ]
   },
   "cefr_a1_food_1": {
     "title": "Food 1",
     "level": "CEFR A1",
-    "rows": 14,
-    "cols": 13,
+    "rows": 13,
+    "cols": 14,
+    "clueImage": "crossword-images/cefr_a1_food_1.png",
     "words": [
       {
-        "number": 5,
+        "number": 2,
         "word": "COCONUT",
         "display": "COCONUT",
-        "clue": "A large brown fruit with a hard shell and white flesh inside.",
-        "row": 6,
+        "row": 1,
+        "col": 7,
+        "direction": "across"
+      },
+      {
+        "number": 3,
+        "word": "HONEY",
+        "display": "HONEY",
+        "row": 3,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 4,
+        "word": "CUCUMBER",
+        "display": "CUCUMBER",
+        "row": 5,
         "col": 0,
         "direction": "across"
       },
       {
-        "number": 2,
-        "word": "HAMBURGER",
-        "display": "HAMBURGER",
-        "clue": "A round bread roll with a meat patty inside.",
-        "row": 2,
-        "col": 5,
+        "number": 8,
+        "word": "BARBECUE",
+        "display": "BARBECUE",
+        "row": 8,
+        "col": 2,
+        "direction": "across"
+      },
+      {
+        "number": 9,
+        "word": "SALAD",
+        "display": "SALAD",
+        "row": 11,
+        "col": 6,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "SOUP",
+        "display": "SOUP",
+        "row": 0,
+        "col": 10,
         "direction": "down"
       },
       {
-        "number": 6,
-        "word": "CUCUMBER",
-        "display": "CUCUMBER",
-        "clue": "A long, green, watery vegetable often used in salads.",
-        "row": 6,
-        "col": 2,
+        "number": 2,
+        "word": "CHERRY",
+        "display": "CHERRY",
+        "row": 1,
+        "col": 7,
         "direction": "down"
       },
       {
         "number": 3,
-        "word": "BARBECUE",
-        "display": "BARBECUE",
-        "clue": "An outdoor meal where meat is grilled over a fire.",
+        "word": "HAMBURGER",
+        "display": "HAMBURGER",
         "row": 3,
         "col": 4,
-        "direction": "across"
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "CREAM",
+        "display": "CREAM",
+        "row": 5,
+        "col": 0,
+        "direction": "down"
       },
       {
         "number": 5,
         "word": "CABBAGE",
         "display": "CABBAGE",
-        "clue": "A round vegetable with tightly packed green or purple leaves.",
-        "row": 6,
-        "col": 0,
+        "row": 5,
+        "col": 2,
         "direction": "down"
       },
       {
-        "number": 4,
-        "word": "CHERRY",
-        "display": "CHERRY",
-        "clue": "A small, round, red fruit with a stone in the middle.",
-        "row": 3,
-        "col": 9,
-        "direction": "down"
-      },
-      {
-        "number": 8,
-        "word": "CEREAL",
-        "display": "CEREAL",
-        "clue": "A breakfast food made from grain, often eaten with milk.",
+        "number": 6,
+        "word": "BEANS",
+        "display": "BEANS",
         "row": 7,
-        "col": 7,
-        "direction": "across"
+        "col": 6,
+        "direction": "down"
       },
       {
         "number": 7,
-        "word": "SALAD",
-        "display": "SALAD",
-        "clue": "A cold dish of mixed vegetables, often with lettuce and tomato.",
-        "row": 6,
-        "col": 11,
-        "direction": "down"
-      },
-      {
-        "number": 9,
-        "word": "BEANS",
-        "display": "BEANS",
-        "clue": "Small seeds eaten as a vegetable, often in pods.",
-        "row": 9,
-        "col": 4,
-        "direction": "across"
-      },
-      {
-        "number": 11,
-        "word": "CREAM",
-        "display": "CREAM",
-        "clue": "A thick, fatty part of milk, often used in desserts.",
-        "row": 13,
-        "col": 1,
-        "direction": "across"
-      },
-      {
-        "number": 1,
-        "word": "HONEY",
-        "display": "HONEY",
-        "clue": "A sweet, sticky substance made by bees.",
-        "row": 0,
-        "col": 11,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "SOUP",
-        "display": "SOUP",
-        "clue": "A liquid food, often hot, made by boiling vegetables or meat.",
-        "row": 9,
-        "col": 8,
+        "word": "CEREAL",
+        "display": "CEREAL",
+        "row": 7,
+        "col": 9,
         "direction": "down"
       }
     ]
@@ -45473,124 +45283,112 @@ const CROSSWORD_PUZZLES = {
   "cefr_a1_food_2": {
     "title": "Food 2",
     "level": "CEFR A1",
-    "rows": 13,
-    "cols": 15,
+    "rows": 18,
+    "cols": 12,
+    "clueImage": "crossword-images/cefr_a1_food_2.png",
     "words": [
       {
-        "number": 6,
-        "word": "PASTA",
-        "display": "PASTA",
-        "clue": "An Italian food made from dough, like spaghetti.",
-        "row": 2,
-        "col": 8,
+        "number": 1,
+        "word": "PEANUTS",
+        "display": "PEANUTS",
+        "row": 0,
+        "col": 3,
         "direction": "across"
       },
       {
         "number": 3,
-        "word": "WATERMELON",
-        "display": "WATERMELON",
-        "clue": "A large fruit with green skin and sweet, red flesh.",
-        "row": 1,
-        "col": 9,
-        "direction": "down"
+        "word": "ONION",
+        "display": "ONION",
+        "row": 2,
+        "col": 2,
+        "direction": "across"
       },
       {
         "number": 4,
-        "word": "STRAWBERRY",
-        "display": "STRAWBERRY",
-        "clue": "A small, red, juicy fruit with seeds on its skin.",
-        "row": 1,
-        "col": 11,
-        "direction": "down"
-      },
-      {
-        "number": 7,
-        "word": "PINEAPPLE",
-        "display": "PINEAPPLE",
-        "clue": "A tropical fruit with spiky skin and sweet yellow flesh.",
+        "word": "PEAR",
+        "display": "PEAR",
         "row": 4,
         "col": 1,
         "direction": "across"
       },
       {
-        "number": 8,
+        "number": 5,
         "word": "PANCAKES",
         "display": "PANCAKES",
-        "clue": "Thin, flat cakes cooked in a pan, often eaten for breakfast.",
-        "row": 4,
-        "col": 7,
-        "direction": "down"
+        "row": 6,
+        "col": 3,
+        "direction": "across"
       },
       {
-        "number": 5,
-        "word": "PEANUTS",
-        "display": "PEANUTS",
-        "clue": "Small nuts often eaten salted as a snack.",
-        "row": 2,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 13,
-        "word": "SAUSAGE",
-        "display": "SAUSAGE",
-        "clue": "Minced meat in a tube-shaped skin, often fried or grilled.",
-        "row": 10,
-        "col": 1,
+        "number": 6,
+        "word": "WATERMELON",
+        "display": "WATERMELON",
+        "row": 8,
+        "col": 0,
         "direction": "across"
       },
       {
         "number": 9,
-        "word": "LETTUCE",
-        "display": "LETTUCE",
-        "clue": "A leafy green vegetable, often used in salads.",
-        "row": 6,
+        "word": "TOAST",
+        "display": "TOAST",
+        "row": 10,
+        "col": 7,
+        "direction": "across"
+      },
+      {
+        "number": 10,
+        "word": "STRAWBERRY",
+        "display": "STRAWBERRY",
+        "row": 14,
+        "col": 1,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "PINEAPPLE",
+        "display": "PINEAPPLE",
+        "row": 0,
         "col": 3,
         "direction": "down"
       },
       {
         "number": 2,
-        "word": "ONION",
-        "display": "ONION",
-        "clue": "A round vegetable with a strong smell and taste, used in cooking.",
+        "word": "SAUSAGE",
+        "display": "SAUSAGE",
         "row": 0,
-        "col": 3,
+        "col": 9,
         "direction": "down"
       },
       {
-        "number": 1,
-        "word": "MELON",
-        "display": "MELON",
-        "clue": "A large, round, juicy fruit with sweet flesh.",
-        "row": 0,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 10,
-        "word": "TOAST",
-        "display": "TOAST",
-        "clue": "Bread that has been browned by heat.",
-        "row": 7,
+        "number": 4,
+        "word": "PASTA",
+        "display": "PASTA",
+        "row": 4,
         "col": 1,
         "direction": "down"
       },
       {
-        "number": 12,
-        "word": "RICE",
-        "display": "RICE",
-        "clue": "Small white or brown grains, a staple food eaten around the world.",
+        "number": 7,
+        "word": "MELON",
+        "display": "MELON",
         "row": 8,
-        "col": 11,
-        "direction": "across"
+        "col": 5,
+        "direction": "down"
+      },
+      {
+        "number": 8,
+        "word": "LETTUCE",
+        "display": "LETTUCE",
+        "row": 8,
+        "col": 7,
+        "direction": "down"
       },
       {
         "number": 11,
-        "word": "PEAR",
-        "display": "PEAR",
-        "clue": "A green or yellow fruit, rounder at the bottom than the top.",
-        "row": 7,
-        "col": 14,
+        "word": "RICE",
+        "display": "RICE",
+        "row": 14,
+        "col": 3,
         "direction": "down"
       }
     ]
@@ -45598,188 +45396,169 @@ const CROSSWORD_PUZZLES = {
   "cefr_a1_parts_of_the_body": {
     "title": "Parts Of The Body",
     "level": "CEFR A1",
-    "rows": 14,
-    "cols": 15,
+    "rows": 11,
+    "cols": 16,
+    "clueImage": "crossword-images/cefr_a1_parts_of_the_body.png",
     "words": [
       {
-        "number": 8,
+        "number": 3,
         "word": "LEG",
         "display": "LEG",
-        "clue": "The body part used for walking, between the hip and foot.",
-        "row": 7,
-        "col": 7,
-        "direction": "across"
-      },
-      {
-        "number": 4,
-        "word": "SHOULDER",
-        "display": "SHOULDER",
-        "clue": "The joint connecting your arm to your body.",
-        "row": 3,
-        "col": 7,
-        "direction": "down"
-      },
-      {
-        "number": 5,
-        "word": "FINGER",
-        "display": "FINGER",
-        "clue": "One of the five parts at the end of your hand.",
-        "row": 4,
-        "col": 9,
-        "direction": "down"
-      },
-      {
-        "number": 11,
-        "word": "ELBOW",
-        "display": "ELBOW",
-        "clue": "The joint in the middle of your arm.",
-        "row": 8,
-        "col": 9,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "MOUTH",
-        "display": "MOUTH",
-        "clue": "The body part you use to eat and speak.",
-        "row": 7,
-        "col": 12,
-        "direction": "down"
-      },
-      {
-        "number": 3,
-        "word": "WAIST",
-        "display": "WAIST",
-        "clue": "The narrow part of your body, above your hips.",
-        "row": 3,
+        "row": 1,
         "col": 4,
         "direction": "across"
       },
       {
-        "number": 12,
-        "word": "ANKLE",
-        "display": "ANKLE",
-        "clue": "The joint connecting your foot to your leg.",
-        "row": 9,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 18,
-        "word": "TOOTH",
-        "display": "TOOTH",
-        "clue": "A hard, white structure in your mouth, used for biting.",
-        "row": 11,
-        "col": 8,
-        "direction": "across"
-      },
-      {
-        "number": 7,
-        "word": "HEAD",
-        "display": "HEAD",
-        "clue": "The top part of your body, containing your brain.",
-        "row": 7,
-        "col": 3,
-        "direction": "down"
-      },
-      {
-        "number": 2,
-        "word": "HAIR",
-        "display": "HAIR",
-        "clue": "The strands that grow on your head.",
-        "row": 2,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 14,
-        "word": "HAND",
-        "display": "HAND",
-        "clue": "The body part at the end of your arm, with fingers.",
-        "row": 10,
+        "number": 5,
+        "word": "SHOULDER",
+        "display": "SHOULDER",
+        "row": 3,
         "col": 0,
         "direction": "across"
       },
       {
-        "number": 16,
-        "word": "NOSE",
-        "display": "NOSE",
-        "clue": "The body part you use to smell and breathe.",
-        "row": 10,
-        "col": 10,
-        "direction": "down"
-      },
-      {
-        "number": 5,
-        "word": "FACE",
-        "display": "FACE",
-        "clue": "The front part of your head, with your eyes, nose, and mouth.",
+        "number": 8,
+        "word": "TOOTH",
+        "display": "TOOTH",
         "row": 4,
-        "col": 9,
+        "col": 11,
         "direction": "across"
       },
       {
-        "number": 19,
+        "number": 9,
+        "word": "ANKLE",
+        "display": "ANKLE",
+        "row": 5,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 11,
+        "word": "FACE",
+        "display": "FACE",
+        "row": 6,
+        "col": 8,
+        "direction": "across"
+      },
+      {
+        "number": 12,
+        "word": "EYE",
+        "display": "EYE",
+        "row": 6,
+        "col": 13,
+        "direction": "across"
+      },
+      {
+        "number": 16,
+        "word": "FINGER",
+        "display": "FINGER",
+        "row": 8,
+        "col": 10,
+        "direction": "across"
+      },
+      {
+        "number": 17,
+        "word": "WAIST",
+        "display": "WAIST",
+        "row": 9,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 18,
         "word": "NECK",
         "display": "NECK",
-        "clue": "The body part connecting your head to your shoulders.",
-        "row": 13,
-        "col": 9,
+        "row": 10,
+        "col": 11,
         "direction": "across"
       },
       {
         "number": 1,
+        "word": "HEAD",
+        "display": "HEAD",
+        "row": 0,
+        "col": 5,
+        "direction": "down"
+      },
+      {
+        "number": 2,
+        "word": "MOUTH",
+        "display": "MOUTH",
+        "row": 0,
+        "col": 15,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "ARM",
+        "display": "ARM",
+        "row": 2,
+        "col": 7,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "HAND",
+        "display": "HAND",
+        "row": 3,
+        "col": 1,
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "NOSE",
+        "display": "NOSE",
+        "row": 3,
+        "col": 13,
+        "direction": "down"
+      },
+      {
+        "number": 8,
+        "word": "TOE",
+        "display": "TOE",
+        "row": 4,
+        "col": 11,
+        "direction": "down"
+      },
+      {
+        "number": 10,
+        "word": "ELBOW",
+        "display": "ELBOW",
+        "row": 5,
+        "col": 4,
+        "direction": "down"
+      },
+      {
+        "number": 11,
         "word": "FOOT",
         "display": "FOOT",
-        "clue": "The body part at the end of your leg, used for standing and walking.",
-        "row": 0,
+        "row": 6,
         "col": 8,
         "direction": "down"
       },
       {
         "number": 13,
-        "word": "KNEE",
-        "display": "KNEE",
-        "clue": "The joint in the middle of your leg.",
-        "row": 9,
-        "col": 5,
+        "word": "EAR",
+        "display": "EAR",
+        "row": 6,
+        "col": 15,
+        "direction": "down"
+      },
+      {
+        "number": 14,
+        "word": "HAIR",
+        "display": "HAIR",
+        "row": 7,
+        "col": 6,
         "direction": "down"
       },
       {
         "number": 15,
-        "word": "ARM",
-        "display": "ARM",
-        "clue": "The body part connecting your shoulder to your hand.",
-        "row": 10,
-        "col": 1,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "EYE",
-        "display": "EYE",
-        "clue": "The body part you use to see.",
-        "row": 8,
-        "col": 1,
-        "direction": "across"
-      },
-      {
-        "number": 17,
-        "word": "TOE",
-        "display": "TOE",
-        "clue": "One of the five parts at the end of your foot.",
-        "row": 10,
+        "word": "KNEE",
+        "display": "KNEE",
+        "row": 7,
         "col": 12,
-        "direction": "across"
-      },
-      {
-        "number": 6,
-        "word": "EAR",
-        "display": "EAR",
-        "clue": "The body part you use to hear.",
-        "row": 5,
-        "col": 3,
-        "direction": "across"
+        "direction": "down"
       }
     ]
   },
@@ -45902,124 +45681,112 @@ const CROSSWORD_PUZZLES = {
   "cefr_a1_sports": {
     "title": "Sports",
     "level": "CEFR A1",
-    "rows": 18,
-    "cols": 17,
+    "rows": 21,
+    "cols": 12,
+    "clueImage": "crossword-images/cefr_a1_sports.png",
     "words": [
       {
-        "number": 8,
-        "word": "RUGBY",
-        "display": "RUGBY",
-        "clue": "A tough contact sport played with an oval ball, often carried by hand.",
-        "row": 8,
-        "col": 5,
+        "number": 5,
+        "word": "VOLLEYBALL",
+        "display": "VOLLEYBALL",
+        "row": 6,
+        "col": 1,
         "direction": "across"
       },
       {
-        "number": 9,
-        "word": "BASKETBALL",
-        "display": "BASKETBALL",
-        "clue": "A team sport where players try to throw a ball through a high hoop.",
+        "number": 6,
+        "word": "SKIING",
+        "display": "SKIING",
         "row": 8,
-        "col": 8,
-        "direction": "down"
+        "col": 0,
+        "direction": "across"
       },
       {
-        "number": 10,
-        "word": "GYMNASTICS",
-        "display": "GYMNASTICS",
-        "clue": "A sport involving rings, balance, and flexible, acrobatic moves.",
-        "row": 10,
-        "col": 3,
+        "number": 8,
+        "word": "ICEHOCKEY",
+        "display": "ICE HOCKEY",
+        "row": 13,
+        "col": 0,
         "direction": "across"
       },
       {
         "number": 11,
-        "word": "VOLLEYBALL",
-        "display": "VOLLEYBALL",
-        "clue": "A team sport where players hit a ball over a net without letting it touch the ground.",
-        "row": 12,
-        "col": 4,
+        "word": "GYMNASTICS",
+        "display": "GYMNASTICS",
+        "row": 15,
+        "col": 0,
         "direction": "across"
       },
       {
         "number": 12,
         "word": "ATHLETICS",
         "display": "ATHLETICS",
-        "clue": "Track and field events like running, jumping, and throwing.",
-        "row": 15,
-        "col": 8,
+        "row": 18,
+        "col": 3,
         "direction": "across"
       },
       {
-        "number": 2,
-        "word": "ICEHOCKEY",
-        "display": "ICE HOCKEY",
-        "clue": "A fast team sport played on ice with sticks and a puck.",
+        "number": 1,
+        "word": "FOOTBALL",
+        "display": "FOOTBALL",
         "row": 0,
         "col": 9,
         "direction": "down"
       },
       {
-        "number": 6,
-        "word": "FOOTBALL",
-        "display": "FOOTBALL",
-        "clue": "A team sport played by kicking a ball into a goal.",
-        "row": 4,
-        "col": 7,
-        "direction": "across"
-      },
-      {
-        "number": 3,
-        "word": "HANDBALL",
-        "display": "HANDBALL",
-        "clue": "A team sport where players throw a ball into a goal using their hands.",
-        "row": 0,
-        "col": 11,
+        "number": 2,
+        "word": "CYCLING",
+        "display": "CYCLING",
+        "row": 3,
+        "col": 4,
         "direction": "down"
       },
       {
-        "number": 5,
+        "number": 3,
+        "word": "RUGBY",
+        "display": "RUGBY",
+        "row": 3,
+        "col": 7,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "BOXING",
+        "display": "BOXING",
+        "row": 5,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 6,
         "word": "SWIMMING",
         "display": "SWIMMING",
-        "clue": "Moving through water using your arms and legs as a sport.",
-        "row": 3,
+        "row": 8,
+        "col": 0,
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "BASKETBALL",
+        "display": "BASKETBALL",
+        "row": 10,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "HANDBALL",
+        "display": "HANDBALL",
+        "row": 13,
         "col": 3,
         "direction": "down"
       },
       {
-        "number": 13,
-        "word": "CYCLING",
-        "display": "CYCLING",
-        "clue": "A sport or activity done by riding a bicycle.",
-        "row": 17,
-        "col": 5,
-        "direction": "across"
-      },
-      {
-        "number": 4,
+        "number": 10,
         "word": "TENNIS",
         "display": "TENNIS",
-        "clue": "A sport played with rackets, hitting a ball over a net on a court.",
-        "row": 2,
-        "col": 8,
-        "direction": "across"
-      },
-      {
-        "number": 7,
-        "word": "BOXING",
-        "display": "BOXING",
-        "clue": "A combat sport in which two people fight wearing padded gloves.",
-        "row": 5,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 1,
-        "word": "SKIING",
-        "display": "SKIING",
-        "clue": "A winter sport done on snowy slopes using two long boards on your feet.",
-        "row": 0,
-        "col": 5,
+        "row": 13,
+        "col": 11,
         "direction": "down"
       }
     ]
@@ -46027,107 +45794,97 @@ const CROSSWORD_PUZZLES = {
   "cefr_a1_nature": {
     "title": "Nature",
     "level": "CEFR A1",
-    "rows": 10,
-    "cols": 13,
+    "rows": 14,
+    "cols": 12,
+    "clueImage": "crossword-images/cefr_a1_nature.png",
     "words": [
       {
-        "number": 7,
-        "word": "LAKE",
-        "display": "LAKE",
-        "clue": "A large area of water surrounded by land.",
-        "row": 5,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 1,
-        "word": "MOUNTAIN",
-        "display": "MOUNTAIN",
-        "clue": "A very high, steep area of land.",
-        "row": 0,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 3,
-        "word": "VOLCANO",
-        "display": "VOLCANO",
-        "clue": "A mountain that can erupt with lava and ash.",
-        "row": 1,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 4,
-        "word": "ISLAND",
-        "display": "ISLAND",
-        "clue": "A piece of land completely surrounded by water.",
-        "row": 3,
+        "number": 2,
+        "word": "FOREST",
+        "display": "FOREST",
+        "row": 4,
         "col": 0,
         "direction": "across"
       },
       {
-        "number": 6,
-        "word": "DESERT",
-        "display": "DESERT",
-        "clue": "A large, dry area with very little rain or plant life.",
-        "row": 4,
-        "col": 6,
-        "direction": "down"
+        "number": 5,
+        "word": "VOLCANO",
+        "display": "VOLCANO",
+        "row": 6,
+        "col": 0,
+        "direction": "across"
       },
       {
-        "number": 11,
-        "word": "PLANET",
-        "display": "PLANET",
-        "clue": "A large round object in space that orbits a star, like Earth.",
+        "number": 9,
+        "word": "DESERT",
+        "display": "DESERT",
         "row": 9,
         "col": 1,
         "direction": "across"
       },
       {
-        "number": 2,
-        "word": "FOREST",
-        "display": "FOREST",
-        "clue": "A large area covered with trees.",
-        "row": 0,
-        "col": 9,
-        "direction": "down"
-      },
-      {
-        "number": 5,
-        "word": "BEACH",
-        "display": "BEACH",
-        "clue": "A sandy or stony area beside the sea.",
-        "row": 3,
-        "col": 8,
-        "direction": "across"
-      },
-      {
-        "number": 10,
-        "word": "RIVER",
-        "display": "RIVER",
-        "clue": "A large natural stream of water that flows into the sea.",
-        "row": 8,
+        "number": 11,
+        "word": "ISLAND",
+        "display": "ISLAND",
+        "row": 11,
         "col": 6,
         "direction": "across"
       },
       {
-        "number": 8,
-        "word": "HILL",
-        "display": "HILL",
-        "clue": "A raised area of land, smaller than a mountain.",
+        "number": 1,
+        "word": "RIVER",
+        "display": "RIVER",
+        "row": 0,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "SEA",
+        "display": "SEA",
+        "row": 4,
+        "col": 4,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "MOUNTAIN",
+        "display": "MOUNTAIN",
+        "row": 5,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "LAKE",
+        "display": "LAKE",
         "row": 6,
         "col": 2,
         "direction": "down"
       },
       {
-        "number": 9,
-        "word": "SEA",
-        "display": "SEA",
-        "clue": "A large area of salt water, smaller than an ocean.",
-        "row": 6,
-        "col": 6,
-        "direction": "across"
+        "number": 7,
+        "word": "BEACH",
+        "display": "BEACH",
+        "row": 8,
+        "col": 4,
+        "direction": "down"
+      },
+      {
+        "number": 8,
+        "word": "PLANET",
+        "display": "PLANET",
+        "row": 8,
+        "col": 10,
+        "direction": "down"
+      },
+      {
+        "number": 10,
+        "word": "HILL",
+        "display": "HILL",
+        "row": 9,
+        "col": 8,
+        "direction": "down"
       }
     ]
   },
@@ -46465,213 +46222,193 @@ const CROSSWORD_PUZZLES = {
   "cefr_a2_whats_the_weather_like": {
     "title": "What's The Weather Like?",
     "level": "CEFR A2",
-    "rows": 12,
-    "cols": 12,
+    "rows": 15,
+    "cols": 16,
+    "clueImage": "crossword-images/cefr_a2_whats_the_weather_like.png",
     "words": [
       {
-        "number": 6,
+        "number": 2,
         "word": "FREEZING",
         "display": "FREEZING",
-        "clue": "Extremely cold, around or below 0\u00b0C.",
-        "row": 3,
-        "col": 4,
+        "row": 2,
+        "col": 8,
         "direction": "across"
       },
       {
-        "number": 1,
-        "word": "STORMY",
-        "display": "STORMY",
-        "clue": "With strong wind, rain, and sometimes thunder.",
-        "row": 0,
+        "number": 5,
+        "word": "SUNNY",
+        "display": "SUNNY",
+        "row": 6,
         "col": 5,
-        "direction": "down"
+        "direction": "across"
+      },
+      {
+        "number": 6,
+        "word": "SNOWY",
+        "display": "SNOWY",
+        "row": 8,
+        "col": 3,
+        "direction": "across"
       },
       {
         "number": 8,
         "word": "CLOUDY",
         "display": "CLOUDY",
-        "clue": "Covered with clouds; not clear or sunny.",
-        "row": 5,
+        "row": 11,
         "col": 0,
         "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "FOGGY",
+        "display": "FOGGY",
+        "row": 0,
+        "col": 15,
+        "direction": "down"
       },
       {
         "number": 3,
         "word": "RAINY",
         "display": "RAINY",
-        "clue": "With a lot of rain falling.",
-        "row": 1,
+        "row": 2,
         "col": 9,
         "direction": "down"
       },
       {
-        "number": 7,
-        "word": "SUNNY",
-        "display": "SUNNY",
-        "clue": "Bright with sunshine and few clouds.",
-        "row": 4,
-        "col": 3,
-        "direction": "down"
-      },
-      {
         "number": 4,
-        "word": "FOGGY",
-        "display": "FOGGY",
-        "clue": "Full of thick mist that makes it hard to see.",
-        "row": 1,
-        "col": 11,
-        "direction": "down"
-      },
-      {
-        "number": 9,
-        "word": "SNOWY",
-        "display": "SNOWY",
-        "clue": "Covered with or full of falling snow.",
-        "row": 7,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 10,
         "word": "WINDY",
         "display": "WINDY",
-        "clue": "With a lot of wind blowing.",
-        "row": 7,
-        "col": 5,
+        "row": 4,
+        "col": 7,
         "direction": "down"
       },
       {
         "number": 5,
-        "word": "COLD",
-        "display": "COLD",
-        "clue": "Having a low temperature.",
-        "row": 3,
-        "col": 1,
+        "word": "STORMY",
+        "display": "STORMY",
+        "row": 6,
+        "col": 5,
         "direction": "down"
       },
       {
-        "number": 2,
+        "number": 7,
         "word": "HOT",
         "display": "HOT",
-        "clue": "Having a high temperature.",
-        "row": 1,
-        "col": 3,
-        "direction": "across"
+        "row": 10,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 8,
+        "word": "COLD",
+        "display": "COLD",
+        "row": 11,
+        "col": 0,
+        "direction": "down"
       }
     ]
   },
   "cefr_a2_whats_his_her_hobby": {
     "title": "What's His/Her Hobby?",
     "level": "CEFR A2",
-    "rows": 12,
-    "cols": 20,
+    "rows": 16,
+    "cols": 16,
+    "clueImage": "crossword-images/cefr_a2_whats_his_her_hobby.png",
     "words": [
       {
-        "number": 5,
-        "word": "BOWLING",
-        "display": "BOWLING",
-        "clue": "A game where players roll a ball to knock down pins.",
-        "row": 3,
-        "col": 5,
-        "direction": "across"
-      },
-      {
         "number": 1,
-        "word": "TABLETENNIS",
-        "display": "TABLE TENNIS",
-        "clue": "A sport played on a table with small paddles and a light ball.",
+        "word": "CHESS",
+        "display": "CHESS",
         "row": 0,
         "col": 8,
-        "direction": "down"
+        "direction": "across"
       },
       {
         "number": 3,
-        "word": "PHOTOGRAPHY",
-        "display": "PHOTOGRAPHY",
-        "clue": "The hobby of taking pictures with a camera.",
-        "row": 1,
-        "col": 6,
-        "direction": "down"
-      },
-      {
-        "number": 6,
-        "word": "GARDENING",
-        "display": "GARDENING",
-        "clue": "Growing and looking after plants outdoors.",
-        "row": 3,
-        "col": 11,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "PAINTING",
-        "display": "PAINTING",
-        "clue": "Creating pictures using paint and a brush.",
-        "row": 9,
-        "col": 6,
-        "direction": "across"
-      },
-      {
-        "number": 7,
-        "word": "DANCING",
-        "display": "DANCING",
-        "clue": "Moving your body rhythmically, usually to music.",
-        "row": 3,
-        "col": 13,
-        "direction": "down"
-      },
-      {
-        "number": 8,
-        "word": "SURFING",
-        "display": "SURFING",
-        "clue": "Riding ocean waves while standing on a board.",
-        "row": 6,
-        "col": 0,
-        "direction": "across"
-      },
-      {
-        "number": 2,
-        "word": "POTTERY",
-        "display": "POTTERY",
-        "clue": "Making objects, like bowls, out of clay.",
-        "row": 1,
-        "col": 2,
-        "direction": "down"
-      },
-      {
-        "number": 9,
-        "word": "COOKING",
-        "display": "COOKING",
-        "clue": "Preparing and making food, often as a hobby.",
-        "row": 6,
-        "col": 13,
-        "direction": "across"
-      },
-      {
-        "number": 11,
-        "word": "JOGGING",
-        "display": "JOGGING",
-        "clue": "Running at a slow, steady pace for exercise.",
-        "row": 11,
+        "word": "DARTS",
+        "display": "DARTS",
+        "row": 2,
         "col": 9,
         "direction": "across"
       },
       {
-        "number": 7,
-        "word": "DARTS",
-        "display": "DARTS",
-        "clue": "A game where players throw small pointed objects at a board.",
-        "row": 3,
-        "col": 13,
+        "number": 4,
+        "word": "PAINTING",
+        "display": "PAINTING",
+        "row": 4,
+        "col": 6,
         "direction": "across"
       },
       {
-        "number": 4,
-        "word": "CHESS",
-        "display": "CHESS",
-        "clue": "A board game played with kings, queens, and other pieces.",
-        "row": 3,
+        "number": 6,
+        "word": "BOWLING",
+        "display": "BOWLING",
+        "row": 6,
+        "col": 5,
+        "direction": "across"
+      },
+      {
+        "number": 8,
+        "word": "COOKING",
+        "display": "COOKING",
+        "row": 9,
         "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 10,
+        "word": "TABLETENNIS",
+        "display": "TABLE TENNIS",
+        "row": 11,
+        "col": 5,
+        "direction": "across"
+      },
+      {
+        "number": 2,
+        "word": "SURFING",
+        "display": "SURFING",
+        "row": 0,
+        "col": 11,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "DANCING",
+        "display": "DANCING",
+        "row": 2,
+        "col": 9,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "PHOTOGRAPHY",
+        "display": "PHOTOGRAPHY",
+        "row": 4,
+        "col": 6,
+        "direction": "down"
+      },
+      {
+        "number": 5,
+        "word": "GARDENING",
+        "display": "GARDENING",
+        "row": 4,
+        "col": 13,
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "JOGGING",
+        "display": "JOGGING",
+        "row": 8,
+        "col": 1,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "POTTERY",
+        "display": "POTTERY",
+        "row": 9,
+        "col": 10,
         "direction": "down"
       }
     ]
@@ -48125,124 +47862,112 @@ const CROSSWORD_PUZZLES = {
   "cefr_b1_in_the_kitchen": {
     "title": "In The Kitchen",
     "level": "CEFR B1",
-    "rows": 17,
-    "cols": 13,
+    "rows": 18,
+    "cols": 16,
+    "clueImage": "crossword-images/cefr_b1_in_the_kitchen.png",
     "words": [
       {
-        "number": 8,
+        "number": 3,
         "word": "SINK",
         "display": "SINK",
-        "clue": "A fixed basin in the kitchen used for washing dishes.",
-        "row": 9,
-        "col": 2,
+        "row": 2,
+        "col": 7,
         "direction": "across"
-      },
-      {
-        "number": 1,
-        "word": "BOTTLEOPENER",
-        "display": "BOTTLE OPENER",
-        "clue": "A tool used to remove metal caps from bottles.",
-        "row": 0,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 7,
-        "word": "DISHWASHER",
-        "display": "DISHWASHER",
-        "clue": "A machine that washes plates, cups, and cutlery.",
-        "row": 7,
-        "col": 2,
-        "direction": "down"
       },
       {
         "number": 6,
         "word": "CORKSCREW",
         "display": "CORKSCREW",
-        "clue": "A tool used to remove corks from wine bottles.",
         "row": 6,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 4,
-        "word": "MICROWAVE",
-        "display": "MICROWAVE",
-        "clue": "An appliance used to heat or cook food quickly using radiation.",
-        "row": 4,
-        "col": 8,
-        "direction": "down"
-      },
-      {
-        "number": 13,
-        "word": "FRYINGPAN",
-        "display": "FRYING PAN",
-        "clue": "A flat pan with a handle, used to fry food.",
-        "row": 16,
         "col": 1,
         "direction": "across"
       },
       {
-        "number": 2,
-        "word": "TINOPENER",
-        "display": "TIN OPENER",
-        "clue": "A tool used to open metal cans.",
-        "row": 2,
-        "col": 4,
+        "number": 8,
+        "word": "BOTTLEOPENER",
+        "display": "BOTTLE OPENER",
+        "row": 8,
+        "col": 0,
+        "direction": "across"
+      },
+      {
+        "number": 10,
+        "word": "BLENDER",
+        "display": "BLENDER",
+        "row": 10,
+        "col": 9,
         "direction": "across"
       },
       {
         "number": 11,
-        "word": "BLENDER",
-        "display": "BLENDER",
-        "clue": "An electric appliance used to mix or puree food and drinks.",
-        "row": 12,
-        "col": 6,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "GRATER",
-        "display": "GRATER",
-        "clue": "A tool with sharp holes used to shred food like cheese.",
-        "row": 10,
-        "col": 6,
-        "direction": "across"
-      },
-      {
-        "number": 3,
-        "word": "PEELER",
-        "display": "PEELER",
-        "clue": "A tool used to remove the skin from fruit and vegetables.",
-        "row": 4,
-        "col": 1,
-        "direction": "across"
-      },
-      {
-        "number": 5,
         "word": "KETTLE",
         "display": "KETTLE",
-        "clue": "A container with a spout, used to boil water.",
-        "row": 5,
-        "col": 10,
-        "direction": "down"
-      },
-      {
-        "number": 10,
-        "word": "TRAY",
-        "display": "TRAY",
-        "clue": "A flat object used to carry food or dishes.",
         "row": 12,
         "col": 0,
         "direction": "across"
       },
       {
         "number": 12,
+        "word": "TRAY",
+        "display": "TRAY",
+        "row": 12,
+        "col": 9,
+        "direction": "across"
+      },
+      {
+        "number": 13,
         "word": "JUG",
         "display": "JUG",
-        "clue": "A container with a handle and spout, used for pouring liquids.",
         "row": 14,
-        "col": 6,
+        "col": 13,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "DISHWASHER",
+        "display": "DISHWASHER",
+        "row": 0,
+        "col": 5,
+        "direction": "down"
+      },
+      {
+        "number": 2,
+        "word": "TINOPENER",
+        "display": "TIN OPENER",
+        "row": 1,
+        "col": 8,
+        "direction": "down"
+      },
+      {
+        "number": 4,
+        "word": "MICROWAVE",
+        "display": "MICROWAVE",
+        "row": 4,
+        "col": 1,
+        "direction": "down"
+      },
+      {
+        "number": 5,
+        "word": "GRATER",
+        "display": "GRATER",
+        "row": 5,
+        "col": 3,
+        "direction": "down"
+      },
+      {
+        "number": 7,
+        "word": "PEELER",
+        "display": "PEELER",
+        "row": 7,
+        "col": 10,
+        "direction": "down"
+      },
+      {
+        "number": 9,
+        "word": "FRYINGPAN",
+        "display": "FRYING PAN",
+        "row": 9,
+        "col": 15,
         "direction": "down"
       }
     ]
@@ -50590,125 +50315,113 @@ const CROSSWORD_PUZZLES = {
   "cefr_c1_cooking": {
     "title": "Cooking",
     "level": "CEFR C1",
-    "rows": 12,
-    "cols": 11,
+    "rows": 7,
+    "cols": 20,
+    "clueImage": "crossword-images/cefr_c1_cooking.png",
     "words": [
       {
-        "number": 6,
-        "word": "BOIL",
-        "display": "BOIL",
-        "clue": "To cook food in water that is bubbling at a very high temperature.",
-        "row": 6,
-        "col": 2,
-        "direction": "across"
-      },
-      {
-        "number": 3,
-        "word": "SPRINKLE",
-        "display": "SPRINKLE",
-        "clue": "To scatter small drops or pieces of something over food.",
-        "row": 3,
-        "col": 4,
-        "direction": "down"
-      },
-      {
-        "number": 3,
-        "word": "STRAIN",
-        "display": "STRAIN",
-        "clue": "To separate liquid from solid food using a sieve or colander.",
-        "row": 3,
-        "col": 4,
-        "direction": "across"
-      },
-      {
-        "number": 10,
-        "word": "SKEWER",
-        "display": "SKEWER",
-        "clue": "To push a thin stick through pieces of food before grilling them.",
-        "row": 8,
-        "col": 3,
-        "direction": "across"
-      },
-      {
-        "number": 11,
+        "number": 2,
         "word": "SLICE",
         "display": "SLICE",
-        "clue": "To cut food into thin, flat pieces.",
-        "row": 10,
+        "row": 0,
+        "col": 14,
+        "direction": "across"
+      },
+      {
+        "number": 4,
+        "word": "MASH",
+        "display": "MASH",
+        "row": 1,
         "col": 0,
         "direction": "across"
       },
       {
+        "number": 6,
+        "word": "SPRINKLE",
+        "display": "SPRINKLE",
+        "row": 1,
+        "col": 5,
+        "direction": "across"
+      },
+      {
         "number": 8,
+        "word": "BOIL",
+        "display": "BOIL",
+        "row": 2,
+        "col": 16,
+        "direction": "across"
+      },
+      {
+        "number": 9,
         "word": "GRATE",
         "display": "GRATE",
-        "clue": "To shred food like cheese into small pieces using a tool with sharp holes.",
-        "row": 7,
-        "col": 8,
+        "row": 3,
+        "col": 1,
+        "direction": "across"
+      },
+      {
+        "number": 10,
+        "word": "POUR",
+        "display": "POUR",
+        "row": 3,
+        "col": 11,
+        "direction": "across"
+      },
+      {
+        "number": 11,
+        "word": "BEAT",
+        "display": "BEAT",
+        "row": 5,
+        "col": 4,
+        "direction": "across"
+      },
+      {
+        "number": 1,
+        "word": "FLIP",
+        "display": "FLIP",
+        "row": 0,
+        "col": 11,
+        "direction": "down"
+      },
+      {
+        "number": 2,
+        "word": "STIR",
+        "display": "STIR",
+        "row": 0,
+        "col": 14,
+        "direction": "down"
+      },
+      {
+        "number": 3,
+        "word": "CHOP",
+        "display": "CHOP",
+        "row": 0,
+        "col": 17,
+        "direction": "down"
+      },
+      {
+        "number": 5,
+        "word": "STRAIN",
+        "display": "STRAIN",
+        "row": 1,
+        "col": 2,
+        "direction": "down"
+      },
+      {
+        "number": 6,
+        "word": "SKEWER",
+        "display": "SKEWER",
+        "row": 1,
+        "col": 5,
         "direction": "down"
       },
       {
         "number": 7,
         "word": "ROAST",
         "display": "ROAST",
-        "clue": "To cook food, often meat, in an oven with dry heat.",
-        "row": 7,
-        "col": 0,
-        "direction": "down"
-      },
-      {
-        "number": 1,
-        "word": "BEAT",
-        "display": "BEAT",
-        "clue": "To mix ingredients quickly and vigorously, often with a whisk.",
-        "row": 0,
-        "col": 5,
-        "direction": "down"
-      },
-      {
-        "number": 12,
-        "word": "STIR",
-        "display": "STIR",
-        "clue": "To mix a liquid or soft food using a spoon, moving it in circles.",
-        "row": 10,
-        "col": 7,
-        "direction": "across"
-      },
-      {
-        "number": 4,
-        "word": "FLIP",
-        "display": "FLIP",
-        "clue": "To turn food over quickly while cooking, e.g. a pancake.",
-        "row": 4,
-        "col": 1,
-        "direction": "across"
-      },
-      {
-        "number": 9,
-        "word": "POUR",
-        "display": "POUR",
-        "clue": "To make a liquid flow out of a container.",
-        "row": 7,
-        "col": 10,
-        "direction": "down"
-      },
-      {
-        "number": 2,
-        "word": "MASH",
-        "display": "MASH",
-        "clue": "To crush soft food (like potatoes) into a soft mixture.",
-        "row": 2,
+        "row": 1,
         "col": 7,
         "direction": "down"
-      },
-      {
-        "number": 5,
-        "word": "CHOP",
-        "display": "CHOP",
-        "clue": "To cut food into pieces with a knife.",
-        "row": 5,
-        "col": 6,
-        "direction": "across"
       }
     ]
   },
@@ -51912,7 +51625,7 @@ function topbar(showBack) {
         <span class="brand-tag">Olympiad Study Shelf</span>
       </div>
       <div style="display:flex;align-items:center;gap:12px;">
-        ${showBack ? `<button class="back-link" id="btn-home">&larr; Буцах</button>` : ''}
+        ${showBack ? `<button class="back-link" id="btn-home">&larr; All resources</button>` : ''}
         ${email ? `<span style="font-size:12px;color:var(--slate);font-family:var(--font-mono)">${email}</span>` : ''}
         <button onclick="localStorage.removeItem('hippo_session');window.location.href='register.html'" style="font-size:12px;background:none;border:1.5px solid var(--line);border-radius:6px;padding:5px 10px;cursor:pointer;color:var(--slate);font-family:var(--font-body);">Гарах</button>
       </div>
@@ -51931,7 +51644,7 @@ function renderHome() {
       <div class="hero">
         <p class="hero-eyebrow">Three resources, one shelf</p>
         <h1>Prepare for HIPPO<br/><em>without the guesswork.</em></h1>
-        <p>Доорх хичээл, материалуудаас өөрт тохирох хэсгээс сонгоорой. Кроссворд нь шалгалтад түгээмэл хэрэглэгддэг үг хэллэгийг сонирхолтой байдлаар давтаж, үгийн сангаа сайжруулахад тусална. Харин хоёр дадлагын тест нь шалгалтын бодит цагийн хязгаартай явагдах бөгөөд тестээ дуусгаж илгээмэгц таны хариуг автоматаар шалгаж, оноог гаргана.</p>
+        <p>Pick a resource below. The crossword builds vocabulary you'll actually see on the exam; the two practice tests run on a real clock and grade themselves the moment you submit.</p>
       </div>
 
       <div class="shelf">
@@ -51940,7 +51653,7 @@ function renderHome() {
           <span class="book-body">
             <span class="book-kicker">Resource 01</span>
             <span class="book-title">Crossword</span>
-            <p class="book-desc">Үгийн сангаа сайжруулах кроссвордууд. Guess and Learn Crosswords (Hippo SRL) номын загварт тулгуурлан боловсруулсан бөгөөд Below Scale-ээс C1 хүртэлх бүх түвшнийг хамарна. Хариултаа кроссвордын нүднүүдэд шууд бичиж бөглөөрэй.</p>
+            <p class="book-desc">Vocabulary crosswords adapted from <em>Guess and Learn Crosswords</em> (Hippo SRL), spanning Below Scale through C1. Type answers directly into the grid.</p>
             <span class="book-meta">
               <span class="book-meta-stat">68 puzzles &middot; 6 levels</span>
               <span class="book-cta">Choose a puzzle ${arrowIcon()}</span>
@@ -51953,7 +51666,7 @@ function renderHome() {
           <span class="book-body">
             <span class="book-kicker">Resource 02</span>
             <span class="book-title">Future Success 1</span>
-            <p class="book-desc">Future Success 1-ийн бодит өмнөх шалгалтын материалууд. Бүх түвшнийг хамарсан MC тест, National Finals болон Use of English хэсгийн тестүүд багтсан. Тест бүр хугацаатай бөгөөд дуусмагц оноо шууд автоматаар гарч, зөв хариултын түлхүүрийг харах боломжтой.</p>
+            <p class="book-desc">Real past-paper tests from Future Success 1 &mdash; MC tests, National Finals, and Use of English, across all levels. Timed, with instant scoring and answer keys.</p>
             <span class="book-meta">
               <span class="book-meta-stat">${Object.keys(FS1_TESTS).length} tests so far</span>
               <span class="book-cta">Choose a test ${arrowIcon()}</span>
@@ -51966,7 +51679,7 @@ function renderHome() {
           <span class="book-body">
             <span class="book-kicker">Resource 03</span>
             <span class="book-title">Future Success 2</span>
-            <p class="book-desc">Future Success 2-ийн бодит өмнөх шалгалтын материалууд. Дараагийн түвшнүүд болох Hippo 3-S2-оос Hippo S5 хүртэлх тестүүд багтсан. Тест бүр хугацаатай бөгөөд дуусмагц оноо шууд автоматаар гарч, зөв хариултын түлхүүрийг харах боломжтой.</p>
+            <p class="book-desc">Real past-paper tests from Future Success 2 &mdash; the next levels up: Hippo 3-S2 through Hippo S5. Timed, with instant scoring and answer keys.</p>
             <span class="book-meta">
               <span class="book-meta-stat">${Object.keys(FS2_TESTS).length} tests so far</span>
               <span class="book-cta">Choose a test ${arrowIcon()}</span>
@@ -52296,7 +52009,10 @@ function renderCrossword(puzzleKey) {
     const lengthLabel = w.display.includes(' ')
       ? w.display.split(' ').map(part => part.length).join(', ')
       : String(w.word.length);
-    return `<li data-number="${w.number}" data-direction="${w.direction}"><span class="clue-num">${w.number}.</span><span>${w.clue} <em style="opacity:.55">(${lengthLabel})</em></span></li>`;
+    const clueText = w.clue
+      ? `${w.clue} <em style="opacity:.55">(${lengthLabel})</em>`
+      : `<em style="opacity:.55">(${lengthLabel} letters &mdash; see picture)</em>`;
+    return `<li data-number="${w.number}" data-direction="${w.direction}"><span class="clue-num">${w.number}.</span><span>${clueText}</span></li>`;
   }
 
   root.innerHTML = `
@@ -52305,7 +52021,9 @@ function renderCrossword(puzzleKey) {
       <div class="page-head">
         <p class="page-eyebrow">Resource 01 &middot; ${level}</p>
         <h1>${title}</h1>
-        <p>Click a clue or a cell to jump to it. Type a letter and the cursor moves forward automatically. Check your work any time &mdash; correct letters turn green.</p>
+        <p>${puzzle.clueImage
+          ? 'This puzzle uses picture clues, just like in the book &mdash; match each number in the picture to a cell in the grid. Type a letter and the cursor moves forward automatically. Check your work any time &mdash; correct letters turn green.'
+          : 'Click a clue or a cell to jump to it. Type a letter and the cursor moves forward automatically. Check your work any time &mdash; correct letters turn green.'}</p>
       </div>
 
       <div class="xword-layout">
@@ -52316,6 +52034,11 @@ function renderCrossword(puzzleKey) {
         </div>
 
         <div class="xword-side">
+          ${puzzle.clueImage ? `
+          <div class="xword-clue-image-wrap">
+            <p>Picture clues, straight from the book:</p>
+            <img src="${puzzle.clueImage}" alt="${title} picture clues" />
+          </div>` : ''}
           <div class="xword-progress">
             <div class="xword-progress-label"><span>Letters filled</span><span id="xword-progress-count">0 / ${Object.keys(cellMap).length}</span></div>
             <div class="progress-track"><div class="progress-fill" id="xword-progress-fill" style="width:0%"></div></div>
@@ -52900,8 +52623,8 @@ function renderTestResults(test, key) {
       </div>
 
       <div class="submit-bar" style="margin-top:24px; justify-content: center; gap: 14px;">
-        <button class="btn btn-secondary" id="retake-test">Дахин эхлүүлэх</button>
-        <button class="btn btn-primary" id="back-to-shelf">Буцах</button>
+        <button class="btn btn-secondary" id="retake-test">Retake this test</button>
+        <button class="btn btn-primary" id="back-to-shelf">Back to all resources</button>
       </div>
     </div>
   `;
